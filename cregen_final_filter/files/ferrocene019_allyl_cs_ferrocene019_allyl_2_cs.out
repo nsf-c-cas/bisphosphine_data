@@ -1,0 +1,98 @@
+ 
+       ==============================================
+       |                                            |
+       |                 C R E S T                  |
+       |                                            |
+       |  Conformer-Rotamer Ensemble Sampling Tool  |
+       |          based on the GFN methods          |
+       |             P.Pracht, S.Grimme             |
+       |          Universitaet Bonn, MCTC           |
+       ==============================================
+       Version 2.11, Tue 9. Feb 11:37:45 CEST 2021
+  Using the xTB program. Compatible with xTB version 6.4.0
+ 
+   Cite work conducted with this code as
+
+   P. Pracht, F. Bohle, S. Grimme, PCCP, 2020, 22, 7169-7192.
+
+   and  S. Grimme, JCTC, 2019, 15, 2847-2862.
+ 
+   with help from:
+   F.Bohle, S.Ehlert, S.Grimme, P.Pracht
+ 
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+ Command line input:
+ > crest ferrocene019_allyl_cs_ferrocene019_allyl_2_cs_best.xyz -cregen ferrocene019_allyl_cs_ferrocene019_allyl_2_cs.xyz -notopo -ethr 0.31375 -rthr 0.2 -ewin 4.0
+
+  -cregen : CREGEN standalone usage. Sorting file <ferrocene019_allyl_cs_ferrocene019_allyl_2_cs.xyz>
+  -ethr 0.31375
+  -rthr 0.2
+  -ewin 4.0
+ Using only the cregen sorting routine.
+ input  file name : ferrocene019_allyl_cs_ferrocene019_allyl_2_cs.xyz
+ output file name : ferrocene019_allyl_cs_ferrocene019_allyl_2_cs.xyz.sorted
+ number of atoms                :   124
+ number of points on xyz files  :   44
+ RMSD threshold                 :   0.2000
+ Bconst threshold               :   0.0100
+ population threshold           :   0.0500
+ conformer energy window  /kcal :   4.0000
+ # fragment in coord            :     1
+ number of reliable points      :    44
+ number of removed by energy    :    12
+ number of remaining points     :    32
+ reference state Etot :  -4059.73387328287     
+ running RMSDs...
+ done.
+ number of doubles removed by rot/RMSD         :           3
+ total number unique points considered further :          29
+       Erel/kcal        Etot weight/tot  conformer     set   degen     origin
+       1   0.000 -4059.73387    0.45940    0.45940       1       1     ferrocene019_allyl_cs_out_0
+       2   0.623 -4059.73288    0.16055    0.30344       2       2     ferrocene019_allyl_2_cs_out_1
+       3   0.693 -4059.73277    0.14289                                ferrocene019_allyl_2_cs_out_6
+       4   1.307 -4059.73179    0.05073    0.09495       3       2     ferrocene019_allyl_cs_out_17
+       5   1.388 -4059.73166    0.04422                                ferrocene019_allyl_cs_out_4
+       6   1.359 -4059.73171    0.04647    0.04647       4       1     ferrocene019_allyl_cs_out_2
+       7   1.856 -4059.73092    0.02010    0.02010       5       1     ferrocene019_allyl_2_cs_out_7
+       8   2.082 -4059.73056    0.01372    0.02729       6       2     ferrocene019_allyl_2_cs_out_17
+       9   2.088 -4059.73055    0.01357                                ferrocene019_allyl_2_cs_out_5
+      10   2.406 -4059.73004    0.00795    0.00795       7       1     ferrocene019_allyl_2_cs_out_0
+      11   2.539 -4059.72983    0.00635    0.00635       8       1     ferrocene019_allyl_cs_out_13
+      12   2.717 -4059.72954    0.00470    0.00470       9       1     ferrocene019_allyl_2_cs_out_12
+      13   2.757 -4059.72948    0.00439    0.00439      10       1     ferrocene019_allyl_cs_out_6
+      14   2.786 -4059.72943    0.00419    0.00419      11       1     ferrocene019_allyl_2_cs_out_3
+      15   2.942 -4059.72918    0.00322    0.00322      12       1     ferrocene019_allyl_2_cs_out_14
+      16   3.004 -4059.72909    0.00290    0.00290      13       1     ferrocene019_allyl_cs_out_12
+      17   3.028 -4059.72905    0.00278    0.00278      14       1     ferrocene019_allyl_2_cs_out_2
+      18   3.075 -4059.72897    0.00257    0.00257      15       1     ferrocene019_allyl_2_cs_out_9
+      19   3.401 -4059.72845    0.00148    0.00148      16       1     ferrocene019_allyl_cs_out_11
+      20   3.500 -4059.72830    0.00126    0.00237      17       2     ferrocene019_allyl_cs_out_9
+      21   3.572 -4059.72818    0.00111                                ferrocene019_allyl_cs_out_1
+      22   3.697 -4059.72798    0.00090    0.00090      18       1     ferrocene019_allyl_cs_out_10
+      23   3.754 -4059.72789    0.00082    0.00082      19       1     ferrocene019_allyl_2_cs_out_13
+      24   3.887 -4059.72768    0.00065    0.00193      20       3     ferrocene019_allyl_2_cs_out_8
+      25   3.915 -4059.72763    0.00062                                ferrocene019_allyl_2_cs_out_19
+      26   3.888 -4059.72768    0.00065                                ferrocene019_allyl_cs_out_7
+      27   3.904 -4059.72765    0.00064    0.00064      21       1     ferrocene019_allyl_2_cs_out_20
+      28   3.925 -4059.72762    0.00061    0.00061      22       1     ferrocene019_allyl_2_cs_out_21
+      29   4.000 -4059.72750    0.00054    0.00054      23       1     ferrocene019_allyl_cs_out_14
+T /K                                  :   298.15
+E lowest                              : -4059.73387
+ensemble average energy (kcal)        :    0.625
+ensemble entropy (J/mol K, cal/mol K) :   15.227    3.639
+ensemble free energy (kcal/mol)       :   -1.085
+population of lowest in %             :   45.940
+ number of unique conformers for further calc           23
+ list of relative energies saved as "crest.energies"
+ 
+ -----------------
+ Wall Time Summary
+ -----------------
+              CREGEN wall time :         0h : 0m : 1s
+--------------------
+Overall wall time  : 0h : 0m : 1s
+ 
+ CREST terminated normally.

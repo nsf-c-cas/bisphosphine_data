@@ -1,0 +1,152 @@
+
+       ==============================================
+       |                                            |
+       |                 C R E S T                  |
+       |                                            |
+       |  Conformer-Rotamer Ensemble Sampling Tool  |
+       |          based on the GFN methods          |
+       |             P.Pracht, S.Grimme             |
+       |          Universitaet Bonn, MCTC           |
+       ==============================================
+       Version 2.12,   Thu 19. Mai 16:32:32 CEST 2022
+  Using the xTB program. Compatible with xTB version 6.4.0
+
+   Cite work conducted with this code as
+
+   • P.Pracht, F.Bohle, S.Grimme, PCCP, 2020, 22, 7169-7192.
+   • S.Grimme, JCTC, 2019, 15, 2847-2862.
+
+   and for works involving QCG as
+
+   • S.Spicher, C.Plett, P.Pracht, A.Hansen, S.Grimme,
+     JCTC, 2022, 18 (5), 3174-3189.
+
+   with help from:
+   C.Bannwarth, F.Bohle, S.Ehlert, S.Grimme,
+   C.Plett, P.Pracht, S.Spicher
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+ Command line input:
+ > crest R-DTBM-SEGPHOS_1_R-DTBM-SEGPHOS_2_best.xyz -cregen R-DTBM-SEGPHOS_1_R-DTBM-SEGPHOS_2.xyz -notopo -ethr 0.31375 -rthr 0.2 -ewin 4.0
+
+  -cregen : CREGEN standalone usage. Sorting file <R-DTBM-SEGPHOS_1_R-DTBM-SEGPHOS_2.xyz>
+  -ethr 0.31375
+  -rthr 0.2
+  -ewin 4.0
+ Using only the cregen sorting routine.
+ input  file name : R-DTBM-SEGPHOS_1_R-DTBM-SEGPHOS_2.xyz
+ output file name : R-DTBM-SEGPHOS_1_R-DTBM-SEGPHOS_2.xyz.sorted
+ number of atoms                :   213
+ number of points on xyz files  :   80
+ RMSD threshold                 :   0.2000
+ Bconst threshold               :   0.0100
+ population threshold           :   0.0500
+ conformer energy window  /kcal :   4.0000
+ # fragment in coord            :     1
+ number of reliable points      :    80
+ reference state Etot :  -7.7604792720642868     
+ running RMSDs...
+ done.
+ number of doubles removed by rot/RMSD         :           0
+ total number unique points considered further :          80
+       Erel/kcal        Etot weight/tot  conformer     set   degen     origin
+       1   0.000    -7.76048    0.01264    0.27635       1      22     R-DTBM-SEGPHOS_2_out_21
+       2   0.004    -7.76047    0.01256                                R-DTBM-SEGPHOS_2_out_23
+       3   0.004    -7.76047    0.01256                                R-DTBM-SEGPHOS_1_out_34
+       4   0.000    -7.76048    0.01264                                R-DTBM-SEGPHOS_1_out_20
+       5   0.000    -7.76048    0.01264                                R-DTBM-SEGPHOS_2_out_13
+       6   0.000    -7.76048    0.01264                                R-DTBM-SEGPHOS_1_out_11
+       7   0.000    -7.76048    0.01264                                R-DTBM-SEGPHOS_2_out_17
+       8   0.004    -7.76047    0.01255                                R-DTBM-SEGPHOS_2_out_38
+       9   0.005    -7.76047    0.01254                                R-DTBM-SEGPHOS_2_out_7
+      10   0.004    -7.76047    0.01256                                R-DTBM-SEGPHOS_2_out_27
+      11   0.006    -7.76047    0.01253                                R-DTBM-SEGPHOS_1_out_6
+      12   0.000    -7.76048    0.01264                                R-DTBM-SEGPHOS_1_out_13
+      13   0.000    -7.76048    0.01264                                R-DTBM-SEGPHOS_1_out_18
+      14   0.002    -7.76048    0.01261                                R-DTBM-SEGPHOS_1_out_19
+      15   0.007    -7.76047    0.01251                                R-DTBM-SEGPHOS_1_out_31
+      16   0.012    -7.76046    0.01240                                R-DTBM-SEGPHOS_2_out_8
+      17   0.002    -7.76048    0.01261                                R-DTBM-SEGPHOS_2_out_20
+      18   0.004    -7.76047    0.01256                                R-DTBM-SEGPHOS_2_out_31
+      19   0.007    -7.76047    0.01251                                R-DTBM-SEGPHOS_2_out_36
+      20   0.012    -7.76046    0.01239                                R-DTBM-SEGPHOS_1_out_16
+      21   0.013    -7.76046    0.01237                                R-DTBM-SEGPHOS_1_out_21
+      22   0.002    -7.76048    0.01261                                R-DTBM-SEGPHOS_2_out_19
+      23   0.013    -7.76046    0.01237    0.02497       2       2     R-DTBM-SEGPHOS_2_out_22
+      24   0.002    -7.76048    0.01260                                R-DTBM-SEGPHOS_2_out_1
+      25   0.004    -7.76047    0.01256    0.08759       3       7     R-DTBM-SEGPHOS_2_out_33
+      26   0.003    -7.76047    0.01258                                R-DTBM-SEGPHOS_2_out_37
+      27   0.007    -7.76047    0.01251                                R-DTBM-SEGPHOS_1_out_38
+      28   0.007    -7.76047    0.01249                                R-DTBM-SEGPHOS_1_out_12
+      29   0.013    -7.76046    0.01236                                R-DTBM-SEGPHOS_2_out_29
+      30   0.006    -7.76047    0.01253                                R-DTBM-SEGPHOS_1_out_2
+      31   0.003    -7.76047    0.01258                                R-DTBM-SEGPHOS_2_out_24
+      32   0.014    -7.76046    0.01235    0.08702       4       7     R-DTBM-SEGPHOS_2_out_18
+      33   0.013    -7.76046    0.01236                                R-DTBM-SEGPHOS_2_out_15
+      34   0.003    -7.76047    0.01258                                R-DTBM-SEGPHOS_1_out_36
+      35   0.014    -7.76046    0.01235                                R-DTBM-SEGPHOS_1_out_17
+      36   0.014    -7.76046    0.01234                                R-DTBM-SEGPHOS_1_out_28
+      37   0.006    -7.76047    0.01252                                R-DTBM-SEGPHOS_2_out_4
+      38   0.006    -7.76047    0.01252                                R-DTBM-SEGPHOS_2_out_5
+      39   0.006    -7.76047    0.01252    0.01252       5       1     R-DTBM-SEGPHOS_2_out_3
+      40   0.006    -7.76047    0.01252    0.14995       6      12     R-DTBM-SEGPHOS_2_out_10
+      41   0.003    -7.76047    0.01257                                R-DTBM-SEGPHOS_2_out_30
+      42   0.003    -7.76047    0.01257                                R-DTBM-SEGPHOS_1_out_33
+      43   0.006    -7.76047    0.01252                                R-DTBM-SEGPHOS_2_out_9
+      44   0.017    -7.76045    0.01229                                R-DTBM-SEGPHOS_1_out_37
+      45   0.003    -7.76047    0.01257                                R-DTBM-SEGPHOS_1_out_23
+      46   0.006    -7.76047    0.01252                                R-DTBM-SEGPHOS_2_out_11
+      47   0.004    -7.76047    0.01256                                R-DTBM-SEGPHOS_1_out_30
+      48   0.006    -7.76047    0.01251                                R-DTBM-SEGPHOS_1_out_8
+      49   0.013    -7.76046    0.01236                                R-DTBM-SEGPHOS_1_out_26
+      50   0.004    -7.76047    0.01256                                R-DTBM-SEGPHOS_1_out_5
+      51   0.012    -7.76046    0.01239                                R-DTBM-SEGPHOS_1_out_15
+      52   0.008    -7.76047    0.01248    0.08710       7       7     R-DTBM-SEGPHOS_2_out_14
+      53   0.015    -7.76045    0.01232                                R-DTBM-SEGPHOS_1_out_10
+      54   0.004    -7.76047    0.01256                                R-DTBM-SEGPHOS_1_out_1
+      55   0.006    -7.76047    0.01251                                R-DTBM-SEGPHOS_1_out_9
+      56   0.003    -7.76047    0.01257                                R-DTBM-SEGPHOS_1_out_32
+      57   0.017    -7.76045    0.01229                                R-DTBM-SEGPHOS_1_out_39
+      58   0.013    -7.76046    0.01236                                R-DTBM-SEGPHOS_1_out_29
+      59   0.013    -7.76046    0.01236    0.04993       8       4     R-DTBM-SEGPHOS_1_out_24
+      60   0.003    -7.76047    0.01257                                R-DTBM-SEGPHOS_2_out_32
+      61   0.009    -7.76046    0.01245                                R-DTBM-SEGPHOS_1_out_14
+      62   0.004    -7.76047    0.01255                                R-DTBM-SEGPHOS_2_out_6
+      63   0.006    -7.76047    0.01251    0.04997       9       4     R-DTBM-SEGPHOS_1_out_35
+      64   0.005    -7.76047    0.01255                                R-DTBM-SEGPHOS_2_out_0
+      65   0.005    -7.76047    0.01255                                R-DTBM-SEGPHOS_2_out_2
+      66   0.013    -7.76046    0.01236                                R-DTBM-SEGPHOS_2_out_25
+      67   0.015    -7.76045    0.01232    0.07507      10       6     R-DTBM-SEGPHOS_2_out_12
+      68   0.006    -7.76047    0.01251                                R-DTBM-SEGPHOS_2_out_34
+      69   0.005    -7.76047    0.01255                                R-DTBM-SEGPHOS_1_out_3
+      70   0.003    -7.76047    0.01257                                R-DTBM-SEGPHOS_1_out_27
+      71   0.004    -7.76047    0.01256                                R-DTBM-SEGPHOS_1_out_0
+      72   0.004    -7.76047    0.01256                                R-DTBM-SEGPHOS_1_out_25
+      73   0.005    -7.76047    0.01254    0.01254      11       1     R-DTBM-SEGPHOS_1_out_4
+      74   0.013    -7.76046    0.01236    0.01236      12       1     R-DTBM-SEGPHOS_2_out_39
+      75   0.005    -7.76047    0.01254    0.03739      13       3     R-DTBM-SEGPHOS_1_out_7
+      76   0.004    -7.76047    0.01256                                R-DTBM-SEGPHOS_1_out_22
+      77   0.017    -7.76045    0.01229                                R-DTBM-SEGPHOS_2_out_35
+      78   0.012    -7.76046    0.01239    0.01239      14       1     R-DTBM-SEGPHOS_2_out_28
+      79   0.009    -7.76046    0.01244    0.02483      15       2     R-DTBM-SEGPHOS_2_out_16
+      80   0.012    -7.76046    0.01239                                R-DTBM-SEGPHOS_2_out_26
+T /K                                  :   298.15
+E lowest                              :    -7.76048
+ensemble average energy (kcal)        :    0.007
+ensemble entropy (J/mol K, cal/mol K) :   36.434    8.708
+ensemble free energy (kcal/mol)       :   -2.596
+population of lowest in %             :   27.635
+ number of unique conformers for further calc           15
+ list of relative energies saved as "crest.energies"
+
+ -----------------
+ Wall Time Summary
+ -----------------
+              CREGEN wall time :         0h : 0m : 0s
+--------------------
+Overall wall time  : 0h : 0m : 0s
+
+ CREST terminated normally.

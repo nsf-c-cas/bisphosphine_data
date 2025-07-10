@@ -1,0 +1,151 @@
+
+       ==============================================
+       |                                            |
+       |                 C R E S T                  |
+       |                                            |
+       |  Conformer-Rotamer Ensemble Sampling Tool  |
+       |          based on the GFN methods          |
+       |             P.Pracht, S.Grimme             |
+       |          Universitaet Bonn, MCTC           |
+       ==============================================
+       Version 2.12,   Thu 19. Mai 16:32:32 CEST 2022
+  Using the xTB program. Compatible with xTB version 6.4.0
+
+   Cite work conducted with this code as
+
+   • P.Pracht, F.Bohle, S.Grimme, PCCP, 2020, 22, 7169-7192.
+   • S.Grimme, JCTC, 2019, 15, 2847-2862.
+
+   and for works involving QCG as
+
+   • S.Spicher, C.Plett, P.Pracht, A.Hansen, S.Grimme,
+     JCTC, 2022, 18 (5), 3174-3189.
+
+   with help from:
+   C.Bannwarth, F.Bohle, S.Ehlert, S.Grimme,
+   C.Plett, P.Pracht, S.Spicher
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+ Command line input:
+ > crest S-35-tBu-C4-TUNEPHOS_1_S-35-tBu-C4-TUNEPHOS_2_best.xyz -cregen S-35-tBu-C4-TUNEPHOS_1_S-35-tBu-C4-TUNEPHOS_2.xyz -notopo -ethr 0.31375 -rthr 0.2 -ewin 4.0
+
+  -cregen : CREGEN standalone usage. Sorting file <S-35-tBu-C4-TUNEPHOS_1_S-35-tBu-C4-TUNEPHOS_2.xyz>
+  -ethr 0.31375
+  -rthr 0.2
+  -ewin 4.0
+ Using only the cregen sorting routine.
+ input  file name : S-35-tBu-C4-TUNEPHOS_1_S-35-tBu-C4-TUNEPHOS_2.xyz
+ output file name : S-35-tBu-C4-TUNEPHOS_1_S-35-tBu-C4-TUNEPHOS_2.xyz.sorted
+ number of atoms                :   203
+ number of points on xyz files  :   80
+ RMSD threshold                 :   0.2000
+ Bconst threshold               :   0.0100
+ population threshold           :   0.0500
+ conformer energy window  /kcal :   4.0000
+ # fragment in coord            :     1
+ number of reliable points      :    80
+ reference state Etot :  -6.9185519581740724     
+ running RMSDs...
+ done.
+ number of doubles removed by rot/RMSD         :           1
+ total number unique points considered further :          79
+       Erel/kcal        Etot weight/tot  conformer     set   degen     origin
+       1   0.000    -6.91855    0.01270    0.40548       1      32     S-35-tBu-C4-TUNEPHOS_1_out_11
+       2   0.000    -6.91855    0.01270                                S-35-tBu-C4-TUNEPHOS_1_out_21
+       3   0.002    -6.91855    0.01267                                S-35-tBu-C4-TUNEPHOS_1_out_32
+       4   0.002    -6.91855    0.01266                                S-35-tBu-C4-TUNEPHOS_2_out_32
+       5   0.000    -6.91855    0.01270                                S-35-tBu-C4-TUNEPHOS_2_out_12
+       6   0.000    -6.91855    0.01270                                S-35-tBu-C4-TUNEPHOS_2_out_24
+       7   0.003    -6.91855    0.01265                                S-35-tBu-C4-TUNEPHOS_1_out_6
+       8   0.000    -6.91855    0.01270                                S-35-tBu-C4-TUNEPHOS_2_out_30
+       9   0.003    -6.91855    0.01264                                S-35-tBu-C4-TUNEPHOS_1_out_4
+      10   0.000    -6.91855    0.01270                                S-35-tBu-C4-TUNEPHOS_2_out_6
+      11   0.000    -6.91855    0.01270                                S-35-tBu-C4-TUNEPHOS_2_out_23
+      12   0.003    -6.91855    0.01264                                S-35-tBu-C4-TUNEPHOS_2_out_3
+      13   0.003    -6.91855    0.01264                                S-35-tBu-C4-TUNEPHOS_1_out_10
+      14   0.003    -6.91855    0.01264                                S-35-tBu-C4-TUNEPHOS_1_out_19
+      15   0.002    -6.91855    0.01266                                S-35-tBu-C4-TUNEPHOS_1_out_18
+      16   0.003    -6.91855    0.01264                                S-35-tBu-C4-TUNEPHOS_1_out_30
+      17   0.002    -6.91855    0.01266                                S-35-tBu-C4-TUNEPHOS_2_out_20
+      18   0.004    -6.91855    0.01262                                S-35-tBu-C4-TUNEPHOS_2_out_38
+      19   0.000    -6.91855    0.01270                                S-35-tBu-C4-TUNEPHOS_1_out_5
+      20   0.004    -6.91855    0.01262                                S-35-tBu-C4-TUNEPHOS_1_out_35
+      21   0.000    -6.91855    0.01270                                S-35-tBu-C4-TUNEPHOS_1_out_12
+      22   0.002    -6.91855    0.01266                                S-35-tBu-C4-TUNEPHOS_2_out_29
+      23   0.003    -6.91855    0.01264                                S-35-tBu-C4-TUNEPHOS_2_out_19
+      24   0.002    -6.91855    0.01266                                S-35-tBu-C4-TUNEPHOS_2_out_21
+      25   0.002    -6.91855    0.01266                                S-35-tBu-C4-TUNEPHOS_1_out_39
+      26   0.000    -6.91855    0.01270                                S-35-tBu-C4-TUNEPHOS_1_out_27
+      27   0.001    -6.91855    0.01269                                S-35-tBu-C4-TUNEPHOS_2_out_17
+      28   0.001    -6.91855    0.01269                                S-35-tBu-C4-TUNEPHOS_2_out_4
+      29   0.001    -6.91855    0.01269                                S-35-tBu-C4-TUNEPHOS_1_out_3
+      30   0.003    -6.91855    0.01264                                S-35-tBu-C4-TUNEPHOS_1_out_17
+      31   0.001    -6.91855    0.01269                                S-35-tBu-C4-TUNEPHOS_1_out_16
+      32   0.001    -6.91855    0.01269                                S-35-tBu-C4-TUNEPHOS_2_out_5
+      33   0.004    -6.91855    0.01261    0.27863       2      22     S-35-tBu-C4-TUNEPHOS_2_out_22
+      34   0.001    -6.91855    0.01269                                S-35-tBu-C4-TUNEPHOS_1_out_25
+      35   0.002    -6.91855    0.01266                                S-35-tBu-C4-TUNEPHOS_1_out_29
+      36   0.002    -6.91855    0.01266                                S-35-tBu-C4-TUNEPHOS_1_out_24
+      37   0.002    -6.91855    0.01266                                S-35-tBu-C4-TUNEPHOS_1_out_34
+      38   0.001    -6.91855    0.01269                                S-35-tBu-C4-TUNEPHOS_2_out_10
+      39   0.001    -6.91855    0.01269                                S-35-tBu-C4-TUNEPHOS_2_out_26
+      40   0.002    -6.91855    0.01266                                S-35-tBu-C4-TUNEPHOS_1_out_38
+      41   0.002    -6.91855    0.01266                                S-35-tBu-C4-TUNEPHOS_1_out_13
+      42   0.001    -6.91855    0.01269                                S-35-tBu-C4-TUNEPHOS_1_out_9
+      43   0.003    -6.91855    0.01264                                S-35-tBu-C4-TUNEPHOS_1_out_20
+      44   0.001    -6.91855    0.01268                                S-35-tBu-C4-TUNEPHOS_2_out_27
+      45   0.001    -6.91855    0.01268                                S-35-tBu-C4-TUNEPHOS_2_out_33
+      46   0.002    -6.91855    0.01266                                S-35-tBu-C4-TUNEPHOS_2_out_18
+      47   0.001    -6.91855    0.01268                                S-35-tBu-C4-TUNEPHOS_2_out_28
+      48   0.002    -6.91855    0.01266                                S-35-tBu-C4-TUNEPHOS_2_out_37
+      49   0.002    -6.91855    0.01265                                S-35-tBu-C4-TUNEPHOS_2_out_13
+      50   0.001    -6.91855    0.01268                                S-35-tBu-C4-TUNEPHOS_1_out_14
+      51   0.001    -6.91855    0.01268                                S-35-tBu-C4-TUNEPHOS_1_out_26
+      52   0.002    -6.91855    0.01265                                S-35-tBu-C4-TUNEPHOS_2_out_14
+      53   0.001    -6.91855    0.01268                                S-35-tBu-C4-TUNEPHOS_1_out_23
+      54   0.003    -6.91855    0.01264                                S-35-tBu-C4-TUNEPHOS_1_out_1
+      55   0.003    -6.91855    0.01265    0.08851       3       7     S-35-tBu-C4-TUNEPHOS_1_out_2
+      56   0.003    -6.91855    0.01265                                S-35-tBu-C4-TUNEPHOS_2_out_7
+      57   0.001    -6.91855    0.01268                                S-35-tBu-C4-TUNEPHOS_2_out_31
+      58   0.003    -6.91855    0.01264                                S-35-tBu-C4-TUNEPHOS_2_out_39
+      59   0.003    -6.91855    0.01263                                S-35-tBu-C4-TUNEPHOS_2_out_36
+      60   0.003    -6.91855    0.01263                                S-35-tBu-C4-TUNEPHOS_1_out_33
+      61   0.003    -6.91855    0.01264                                S-35-tBu-C4-TUNEPHOS_2_out_8
+      62   0.001    -6.91855    0.01267    0.02519       4       2     S-35-tBu-C4-TUNEPHOS_2_out_16
+      63   0.009    -6.91854    0.01252                                S-35-tBu-C4-TUNEPHOS_1_out_0
+      64   0.001    -6.91855    0.01267    0.12632       5      10     S-35-tBu-C4-TUNEPHOS_1_out_15
+      65   0.001    -6.91855    0.01267                                S-35-tBu-C4-TUNEPHOS_1_out_28
+      66   0.003    -6.91855    0.01265                                S-35-tBu-C4-TUNEPHOS_2_out_2
+      67   0.005    -6.91854    0.01259                                S-35-tBu-C4-TUNEPHOS_2_out_11
+      68   0.003    -6.91855    0.01264                                S-35-tBu-C4-TUNEPHOS_1_out_37
+      69   0.004    -6.91855    0.01262                                S-35-tBu-C4-TUNEPHOS_2_out_25
+      70   0.003    -6.91855    0.01265                                S-35-tBu-C4-TUNEPHOS_1_out_8
+      71   0.003    -6.91855    0.01264                                S-35-tBu-C4-TUNEPHOS_2_out_1
+      72   0.009    -6.91854    0.01251                                S-35-tBu-C4-TUNEPHOS_2_out_0
+      73   0.002    -6.91855    0.01267                                S-35-tBu-C4-TUNEPHOS_2_out_35
+      74   0.004    -6.91855    0.01262    0.05056       6       4     S-35-tBu-C4-TUNEPHOS_1_out_22
+      75   0.003    -6.91855    0.01265                                S-35-tBu-C4-TUNEPHOS_2_out_9
+      76   0.004    -6.91855    0.01262                                S-35-tBu-C4-TUNEPHOS_1_out_7
+      77   0.002    -6.91855    0.01267                                S-35-tBu-C4-TUNEPHOS_1_out_31
+      78   0.002    -6.91855    0.01267    0.02531       7       2     S-35-tBu-C4-TUNEPHOS_2_out_34
+      79   0.003    -6.91855    0.01265                                S-35-tBu-C4-TUNEPHOS_1_out_36
+T /K                                  :   298.15
+E lowest                              :    -6.91855
+ensemble average energy (kcal)        :    0.002
+ensemble entropy (J/mol K, cal/mol K) :   36.330    8.683
+ensemble free energy (kcal/mol)       :   -2.589
+population of lowest in %             :   40.548
+ number of unique conformers for further calc            7
+ list of relative energies saved as "crest.energies"
+
+ -----------------
+ Wall Time Summary
+ -----------------
+              CREGEN wall time :         0h : 0m : 0s
+--------------------
+Overall wall time  : 0h : 0m : 0s
+
+ CREST terminated normally.

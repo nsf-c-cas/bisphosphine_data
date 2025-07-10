@@ -1,0 +1,88 @@
+
+       ==============================================
+       |                                            |
+       |                 C R E S T                  |
+       |                                            |
+       |  Conformer-Rotamer Ensemble Sampling Tool  |
+       |          based on the GFN methods          |
+       |             P.Pracht, S.Grimme             |
+       |          Universitaet Bonn, MCTC           |
+       ==============================================
+       Version 2.12,   Thu 19. Mai 16:32:32 CEST 2022
+  Using the xTB program. Compatible with xTB version 6.4.0
+
+   Cite work conducted with this code as
+
+   • P.Pracht, F.Bohle, S.Grimme, PCCP, 2020, 22, 7169-7192.
+   • S.Grimme, JCTC, 2019, 15, 2847-2862.
+
+   and for works involving QCG as
+
+   • S.Spicher, C.Plett, P.Pracht, A.Hansen, S.Grimme,
+     JCTC, 2022, 18 (5), 3174-3189.
+
+   with help from:
+   C.Bannwarth, F.Bohle, S.Ehlert, S.Grimme,
+   C.Plett, P.Pracht, S.Spicher
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+ Command line input:
+ > crest R-C4TunePhos_1_R-C4TunePhos_2_best.xyz -cregen R-C4TunePhos_1_R-C4TunePhos_2.xyz -notopo -ethr 0.31375 -rthr 0.2 -ewin 4.0
+
+  -cregen : CREGEN standalone usage. Sorting file <R-C4TunePhos_1_R-C4TunePhos_2.xyz>
+  -ethr 0.31375
+  -rthr 0.2
+  -ewin 4.0
+ Using only the cregen sorting routine.
+ input  file name : R-C4TunePhos_1_R-C4TunePhos_2.xyz
+ output file name : R-C4TunePhos_1_R-C4TunePhos_2.xyz.sorted
+ number of atoms                :   107
+ number of points on xyz files  :   16
+ RMSD threshold                 :   0.2000
+ Bconst threshold               :   0.0100
+ population threshold           :   0.0500
+ conformer energy window  /kcal :   4.0000
+ # fragment in coord            :     1
+ number of reliable points      :    16
+ reference state Etot :  -4.9145514701785977     
+ running RMSDs...
+ done.
+ number of doubles removed by rot/RMSD         :           0
+ total number unique points considered further :          16
+       Erel/kcal        Etot weight/tot  conformer     set   degen     origin
+       1   0.000    -4.91455    0.06295    0.25113       1       4     R-C4TunePhos_2_out_6
+       2   0.000    -4.91455    0.06295                                R-C4TunePhos_1_out_6
+       3   0.003    -4.91455    0.06262                                R-C4TunePhos_2_out_3
+       4   0.003    -4.91455    0.06262                                R-C4TunePhos_1_out_3
+       5   0.002    -4.91455    0.06272    0.12543       2       2     R-C4TunePhos_2_out_7
+       6   0.002    -4.91455    0.06271                                R-C4TunePhos_1_out_7
+       7   0.003    -4.91455    0.06261    0.12522       3       2     R-C4TunePhos_2_out_4
+       8   0.003    -4.91455    0.06261                                R-C4TunePhos_1_out_4
+       9   0.004    -4.91455    0.06252    0.12504       4       2     R-C4TunePhos_2_out_2
+      10   0.004    -4.91454    0.06252                                R-C4TunePhos_1_out_2
+      11   0.006    -4.91454    0.06227    0.12452       5       2     R-C4TunePhos_2_out_5
+      12   0.007    -4.91454    0.06226                                R-C4TunePhos_1_out_5
+      13   0.007    -4.91454    0.06218    0.12434       6       2     R-C4TunePhos_2_out_0
+      14   0.007    -4.91454    0.06217                                R-C4TunePhos_1_out_0
+      15   0.007    -4.91454    0.06216    0.12431       7       2     R-C4TunePhos_2_out_1
+      16   0.008    -4.91454    0.06215                                R-C4TunePhos_1_out_1
+T /K                                  :   298.15
+E lowest                              :    -4.91455
+ensemble average energy (kcal)        :    0.004
+ensemble entropy (J/mol K, cal/mol K) :   23.053    5.510
+ensemble free energy (kcal/mol)       :   -1.643
+population of lowest in %             :   25.113
+ number of unique conformers for further calc            7
+ list of relative energies saved as "crest.energies"
+
+ -----------------
+ Wall Time Summary
+ -----------------
+              CREGEN wall time :         0h : 0m : 0s
+--------------------
+Overall wall time  : 0h : 0m : 0s
+
+ CREST terminated normally.

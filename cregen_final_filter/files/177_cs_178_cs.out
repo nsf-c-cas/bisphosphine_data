@@ -1,0 +1,101 @@
+ 
+       ==============================================
+       |                                            |
+       |                 C R E S T                  |
+       |                                            |
+       |  Conformer-Rotamer Ensemble Sampling Tool  |
+       |          based on the GFN methods          |
+       |             P.Pracht, S.Grimme             |
+       |          Universitaet Bonn, MCTC           |
+       ==============================================
+       Version 2.11, Tue 9. Feb 11:37:45 CEST 2021
+  Using the xTB program. Compatible with xTB version 6.4.0
+ 
+   Cite work conducted with this code as
+
+   P. Pracht, F. Bohle, S. Grimme, PCCP, 2020, 22, 7169-7192.
+
+   and  S. Grimme, JCTC, 2019, 15, 2847-2862.
+ 
+   with help from:
+   F.Bohle, S.Ehlert, S.Grimme, P.Pracht
+ 
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+ Command line input:
+ > crest 177_cs_178_cs_best.xyz -cregen 177_cs_178_cs.xyz -notopo -ethr 0.31375 -rthr 0.2 -ewin 4.0
+
+  -cregen : CREGEN standalone usage. Sorting file <177_cs_178_cs.xyz>
+  -ethr 0.31375
+  -rthr 0.2
+  -ewin 4.0
+ Using only the cregen sorting routine.
+ input  file name : 177_cs_178_cs.xyz
+ output file name : 177_cs_178_cs.xyz.sorted
+ number of atoms                :   98
+ number of points on xyz files  :   36
+ RMSD threshold                 :   0.2000
+ Bconst threshold               :   0.0100
+ population threshold           :   0.0500
+ conformer energy window  /kcal :   4.0000
+ # fragment in coord            :     1
+ number of reliable points      :    36
+ number of removed by energy    :     4
+ number of remaining points     :    32
+ reference state Etot :  -2218.03803550996     
+ running RMSDs...
+ done.
+ number of doubles removed by rot/RMSD         :           0
+ total number unique points considered further :          32
+       Erel/kcal        Etot weight/tot  conformer     set   degen     origin
+       1   0.000 -2218.03804    0.19816    0.78095       1       5     178_cs_out_4
+       2   0.112 -2218.03786    0.16399                                178_cs_out_9
+       3   0.115 -2218.03785    0.16328                                178_cs_out_11
+       4   0.229 -2218.03767    0.13462                                177_cs_out_4
+       5   0.293 -2218.03757    0.12089                                177_cs_out_8
+       6   0.365 -2218.03745    0.10705    0.10705       2       1     177_cs_out_10
+       7   1.092 -2218.03630    0.03145    0.03145       3       1     178_cs_out_15
+       8   1.302 -2218.03596    0.02204    0.03848       4       2     177_cs_out_9
+       9   1.477 -2218.03568    0.01643                                178_cs_out_10
+      10   1.528 -2218.03560    0.01506    0.01506       5       1     177_cs_out_13
+      11   2.240 -2218.03447    0.00454    0.01098       6       3     178_cs_out_0
+      12   2.372 -2218.03426    0.00363                                177_cs_out_1
+      13   2.524 -2218.03401    0.00281                                177_cs_out_0
+      14   2.773 -2218.03362    0.00185    0.00185       7       1     178_cs_out_18
+      15   2.842 -2218.03351    0.00164    0.00164       8       1     178_cs_out_2
+      16   2.857 -2218.03348    0.00160    0.00160       9       1     178_cs_out_1
+      17   2.926 -2218.03337    0.00143    0.00342      10       3     177_cs_out_12
+      18   3.107 -2218.03308    0.00105                                178_cs_out_14
+      19   3.169 -2218.03299    0.00095                                178_cs_out_13
+      20   3.178 -2218.03297    0.00093    0.00093      11       1     177_cs_out_2
+      21   3.206 -2218.03293    0.00089    0.00089      12       1     177_cs_out_6
+      22   3.211 -2218.03292    0.00088    0.00232      13       3     178_cs_out_3
+      23   3.452 -2218.03253    0.00059                                177_cs_out_5
+      24   3.230 -2218.03289    0.00085                                177_cs_out_16
+      25   3.340 -2218.03271    0.00071    0.00071      14       1     178_cs_out_5
+      26   3.541 -2218.03239    0.00051    0.00095      15       2     178_cs_out_7
+      27   3.618 -2218.03227    0.00044                                177_cs_out_7
+      28   3.619 -2218.03227    0.00044    0.00044      16       1     177_cs_out_3
+      29   3.689 -2218.03216    0.00039    0.00101      17       3     178_cs_out_16
+      30   3.820 -2218.03195    0.00032                                178_cs_out_17
+      31   3.845 -2218.03191    0.00030                                177_cs_out_15
+      32   3.938 -2218.03176    0.00026    0.00026      18       1     178_cs_out_8
+T /K                                  :   298.15
+E lowest                              : -2218.03804
+ensemble average energy (kcal)        :    0.329
+ensemble entropy (J/mol K, cal/mol K) :   18.074    4.320
+ensemble free energy (kcal/mol)       :   -1.288
+population of lowest in %             :   78.095
+ number of unique conformers for further calc           18
+ list of relative energies saved as "crest.energies"
+ 
+ -----------------
+ Wall Time Summary
+ -----------------
+              CREGEN wall time :         0h : 0m : 1s
+--------------------
+Overall wall time  : 0h : 0m : 1s
+ 
+ CREST terminated normally.

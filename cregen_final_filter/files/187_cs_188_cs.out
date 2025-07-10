@@ -1,0 +1,84 @@
+ 
+       ==============================================
+       |                                            |
+       |                 C R E S T                  |
+       |                                            |
+       |  Conformer-Rotamer Ensemble Sampling Tool  |
+       |          based on the GFN methods          |
+       |             P.Pracht, S.Grimme             |
+       |          Universitaet Bonn, MCTC           |
+       ==============================================
+       Version 2.11, Tue 9. Feb 11:37:45 CEST 2021
+  Using the xTB program. Compatible with xTB version 6.4.0
+ 
+   Cite work conducted with this code as
+
+   P. Pracht, F. Bohle, S. Grimme, PCCP, 2020, 22, 7169-7192.
+
+   and  S. Grimme, JCTC, 2019, 15, 2847-2862.
+ 
+   with help from:
+   F.Bohle, S.Ehlert, S.Grimme, P.Pracht
+ 
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+ Command line input:
+ > crest 187_cs_188_cs_best.xyz -cregen 187_cs_188_cs.xyz -notopo -ethr 0.31375 -rthr 0.2 -ewin 4.0
+
+  -cregen : CREGEN standalone usage. Sorting file <187_cs_188_cs.xyz>
+  -ethr 0.31375
+  -rthr 0.2
+  -ewin 4.0
+ Using only the cregen sorting routine.
+ input  file name : 187_cs_188_cs.xyz
+ output file name : 187_cs_188_cs.xyz.sorted
+ number of atoms                :   101
+ number of points on xyz files  :   17
+ RMSD threshold                 :   0.2000
+ Bconst threshold               :   0.0100
+ population threshold           :   0.0500
+ conformer energy window  /kcal :   4.0000
+ # fragment in coord            :     1
+ number of reliable points      :    17
+ reference state Etot :  -3156.52276057769     
+ running RMSDs...
+ done.
+ number of doubles removed by rot/RMSD         :           0
+ total number unique points considered further :          17
+       Erel/kcal        Etot weight/tot  conformer     set   degen     origin
+       1   0.000 -3156.52276    0.20318    0.65815       1       4     187_cs_out_2
+       2   0.049 -3156.52268    0.18712                                187_cs_out_6
+       3   0.191 -3156.52246    0.14726                                187_cs_out_5
+       4   0.309 -3156.52227    0.12059                                188_cs_out_6
+       5   0.319 -3156.52225    0.11868    0.20622       2       2     188_cs_out_5
+       6   0.499 -3156.52196    0.08754                                188_cs_out_2
+       7   0.992 -3156.52118    0.03812    0.13163       3       4     187_cs_out_3
+       8   1.075 -3156.52105    0.03317                                187_cs_out_1
+       9   1.107 -3156.52100    0.03143                                188_cs_out_3
+      10   1.156 -3156.52092    0.02891                                188_cs_out_1
+      11   3.335 -3156.51745    0.00073    0.00400       4       7     187_cs_out_0
+      12   3.353 -3156.51742    0.00071                                187_cs_out_4
+      13   3.469 -3156.51723    0.00058                                188_cs_out_0
+      14   3.539 -3156.51712    0.00052                                188_cs_out_7
+      15   3.576 -3156.51706    0.00049                                187_cs_out_7
+      16   3.580 -3156.51706    0.00049                                187_cs_out_8
+      17   3.595 -3156.51703    0.00047                                188_cs_out_4
+T /K                                  :   298.15
+E lowest                              : -3156.52276
+ensemble average energy (kcal)        :    0.312
+ensemble entropy (J/mol K, cal/mol K) :   17.621    4.211
+ensemble free energy (kcal/mol)       :   -1.256
+population of lowest in %             :   65.815
+ number of unique conformers for further calc            4
+ list of relative energies saved as "crest.energies"
+ 
+ -----------------
+ Wall Time Summary
+ -----------------
+              CREGEN wall time :         0h : 0m : 1s
+--------------------
+Overall wall time  : 0h : 0m : 1s
+ 
+ CREST terminated normally.

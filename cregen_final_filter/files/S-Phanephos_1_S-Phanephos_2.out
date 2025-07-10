@@ -1,0 +1,86 @@
+
+       ==============================================
+       |                                            |
+       |                 C R E S T                  |
+       |                                            |
+       |  Conformer-Rotamer Ensemble Sampling Tool  |
+       |          based on the GFN methods          |
+       |             P.Pracht, S.Grimme             |
+       |          Universitaet Bonn, MCTC           |
+       ==============================================
+       Version 2.12,   Thu 19. Mai 16:32:32 CEST 2022
+  Using the xTB program. Compatible with xTB version 6.4.0
+
+   Cite work conducted with this code as
+
+   • P.Pracht, F.Bohle, S.Grimme, PCCP, 2020, 22, 7169-7192.
+   • S.Grimme, JCTC, 2019, 15, 2847-2862.
+
+   and for works involving QCG as
+
+   • S.Spicher, C.Plett, P.Pracht, A.Hansen, S.Grimme,
+     JCTC, 2022, 18 (5), 3174-3189.
+
+   with help from:
+   C.Bannwarth, F.Bohle, S.Ehlert, S.Grimme,
+   C.Plett, P.Pracht, S.Spicher
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+ Command line input:
+ > crest S-Phanephos_1_S-Phanephos_2_best.xyz -cregen S-Phanephos_1_S-Phanephos_2.xyz -notopo -ethr 0.31375 -rthr 0.2 -ewin 4.0
+
+  -cregen : CREGEN standalone usage. Sorting file <S-Phanephos_1_S-Phanephos_2.xyz>
+  -ethr 0.31375
+  -rthr 0.2
+  -ewin 4.0
+ Using only the cregen sorting routine.
+ input  file name : S-Phanephos_1_S-Phanephos_2.xyz
+ output file name : S-Phanephos_1_S-Phanephos_2.xyz.sorted
+ number of atoms                :   105
+ number of points on xyz files  :   16
+ RMSD threshold                 :   0.2000
+ Bconst threshold               :   0.0100
+ population threshold           :   0.0500
+ conformer energy window  /kcal :   4.0000
+ # fragment in coord            :     1
+ number of reliable points      :    16
+ reference state Etot :  -4.6748854527995700     
+ running RMSDs...
+ done.
+ number of doubles removed by rot/RMSD         :           2
+ total number unique points considered further :          14
+       Erel/kcal        Etot weight/tot  conformer     set   degen     origin
+       1   0.000    -4.67489    0.07160    0.35761       1       5     S-Phanephos_2_out_5
+       2   0.001    -4.67488    0.07148                                S-Phanephos_2_out_0
+       3   0.001    -4.67488    0.07147                                S-Phanephos_2_out_7
+       4   0.001    -4.67488    0.07145                                S-Phanephos_2_out_4
+       5   0.000    -4.67489    0.07160                                S-Phanephos_1_out_2
+       6   0.001    -4.67488    0.07145    0.21385       2       3     S-Phanephos_2_out_6
+       7   0.001    -4.67488    0.07145                                S-Phanephos_1_out_4
+       8   0.005    -4.67488    0.07095                                S-Phanephos_2_out_2
+       9   0.000    -4.67489    0.07160    0.28563       3       4     S-Phanephos_2_out_1
+      10   0.005    -4.67488    0.07095                                S-Phanephos_1_out_3
+      11   0.000    -4.67489    0.07160                                S-Phanephos_1_out_5
+      12   0.001    -4.67488    0.07148                                S-Phanephos_1_out_7
+      13   0.001    -4.67488    0.07147    0.14292       4       2     S-Phanephos_1_out_0
+      14   0.001    -4.67488    0.07145                                S-Phanephos_1_out_6
+T /K                                  :   298.15
+E lowest                              :    -4.67489
+ensemble average energy (kcal)        :    0.001
+ensemble entropy (J/mol K, cal/mol K) :   21.942    5.244
+ensemble free energy (kcal/mol)       :   -1.564
+population of lowest in %             :   35.761
+ number of unique conformers for further calc            4
+ list of relative energies saved as "crest.energies"
+
+ -----------------
+ Wall Time Summary
+ -----------------
+              CREGEN wall time :         0h : 0m : 0s
+--------------------
+Overall wall time  : 0h : 0m : 0s
+
+ CREST terminated normally.

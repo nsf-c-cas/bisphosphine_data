@@ -1,0 +1,110 @@
+ 
+       ==============================================
+       |                                            |
+       |                 C R E S T                  |
+       |                                            |
+       |  Conformer-Rotamer Ensemble Sampling Tool  |
+       |          based on the GFN methods          |
+       |             P.Pracht, S.Grimme             |
+       |          Universitaet Bonn, MCTC           |
+       ==============================================
+       Version 2.11, Tue 9. Feb 11:37:45 CEST 2021
+  Using the xTB program. Compatible with xTB version 6.4.0
+ 
+   Cite work conducted with this code as
+
+   P. Pracht, F. Bohle, S. Grimme, PCCP, 2020, 22, 7169-7192.
+
+   and  S. Grimme, JCTC, 2019, 15, 2847-2862.
+ 
+   with help from:
+   F.Bohle, S.Ehlert, S.Grimme, P.Pracht
+ 
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+ Command line input:
+ > crest 3_cs_4_cs_best.xyz -cregen 3_cs_4_cs.xyz -notopo -ethr 0.31375 -rthr 0.2 -ewin 4.0
+
+  -cregen : CREGEN standalone usage. Sorting file <3_cs_4_cs.xyz>
+  -ethr 0.31375
+  -rthr 0.2
+  -ewin 4.0
+ Using only the cregen sorting routine.
+ input  file name : 3_cs_4_cs.xyz
+ output file name : 3_cs_4_cs.xyz.sorted
+ number of atoms                :   105
+ number of points on xyz files  :   80
+ RMSD threshold                 :   0.2000
+ Bconst threshold               :   0.0100
+ population threshold           :   0.0500
+ conformer energy window  /kcal :   4.0000
+ # fragment in coord            :     1
+ number of reliable points      :    80
+ number of removed by energy    :    36
+ number of remaining points     :    44
+ reference state Etot :  -2913.67663452590     
+ running RMSDs...
+ done.
+ number of doubles removed by rot/RMSD         :           3
+ total number unique points considered further :          41
+       Erel/kcal        Etot weight/tot  conformer     set   degen     origin
+       1   0.000 -2913.67663    0.18771    0.43885       1       3     3_cs_out_0
+       2   0.213 -2913.67630    0.13110                                4_cs_out_11
+       3   0.265 -2913.67621    0.12004                                4_cs_out_30
+       4   0.363 -2913.67606    0.10182    0.28386       2       3     4_cs_out_20
+       5   0.386 -2913.67602    0.09787                                4_cs_out_19
+       6   0.476 -2913.67588    0.08417                                4_cs_out_25
+       7   0.410 -2913.67598    0.09403    0.16522       3       2     4_cs_out_4
+       8   0.575 -2913.67572    0.07119                                4_cs_out_0
+       9   1.188 -2913.67474    0.02533    0.07972       4       4     4_cs_out_1
+      10   1.232 -2913.67467    0.02351                                3_cs_out_8
+      11   1.478 -2913.67428    0.01552                                3_cs_out_1
+      12   1.484 -2913.67427    0.01537                                3_cs_out_7
+      13   1.499 -2913.67425    0.01498    0.01498       5       1     3_cs_out_26
+      14   2.660 -2913.67240    0.00211    0.00422       6       2     3_cs_out_14
+      15   2.662 -2913.67239    0.00211                                3_cs_out_36
+      16   2.687 -2913.67235    0.00202    0.00202       7       1     4_cs_out_7
+      17   3.113 -2913.67167    0.00098    0.00158       8       2     3_cs_out_10
+      18   3.410 -2913.67120    0.00060                                4_cs_out_27
+      19   3.444 -2913.67115    0.00056    0.00298       9       6     4_cs_out_28
+      20   3.546 -2913.67098    0.00047                                4_cs_out_21
+      21   3.549 -2913.67098    0.00047                                4_cs_out_6
+      22   3.453 -2913.67113    0.00056                                3_cs_out_4
+      23   3.566 -2913.67095    0.00046                                4_cs_out_23
+      24   3.578 -2913.67093    0.00045                                3_cs_out_19
+      25   3.614 -2913.67087    0.00042    0.00449      10      10     4_cs_out_3
+      26   3.618 -2913.67087    0.00042                                4_cs_out_24
+      27   3.465 -2913.67111    0.00054                                4_cs_out_22
+      28   3.513 -2913.67104    0.00050                                4_cs_out_26
+      29   3.626 -2913.67086    0.00041                                3_cs_out_24
+      30   3.527 -2913.67101    0.00049                                3_cs_out_3
+      31   3.628 -2913.67085    0.00041                                4_cs_out_12
+      32   3.648 -2913.67082    0.00040                                3_cs_out_32
+      33   3.649 -2913.67082    0.00040                                3_cs_out_20
+      34   3.537 -2913.67100    0.00048                                4_cs_out_31
+      35   3.716 -2913.67071    0.00036    0.00151      11       5     4_cs_out_18
+      36   3.880 -2913.67045    0.00027                                4_cs_out_14
+      37   3.776 -2913.67062    0.00032                                3_cs_out_39
+      38   3.943 -2913.67035    0.00024                                4_cs_out_32
+      39   3.781 -2913.67061    0.00032                                4_cs_out_17
+      40   3.844 -2913.67051    0.00029    0.00029      12       1     4_cs_out_38
+      41   3.864 -2913.67048    0.00028    0.00028      13       1     4_cs_out_13
+T /K                                  :   298.15
+E lowest                              : -2913.67663
+ensemble average energy (kcal)        :    0.437
+ensemble entropy (J/mol K, cal/mol K) :   20.042    4.790
+ensemble free energy (kcal/mol)       :   -1.428
+population of lowest in %             :   43.885
+ number of unique conformers for further calc           13
+ list of relative energies saved as "crest.energies"
+ 
+ -----------------
+ Wall Time Summary
+ -----------------
+              CREGEN wall time :         0h : 0m : 3s
+--------------------
+Overall wall time  : 0h : 0m : 3s
+ 
+ CREST terminated normally.

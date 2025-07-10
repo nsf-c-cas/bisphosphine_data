@@ -1,0 +1,83 @@
+
+       ==============================================
+       |                                            |
+       |                 C R E S T                  |
+       |                                            |
+       |  Conformer-Rotamer Ensemble Sampling Tool  |
+       |          based on the GFN methods          |
+       |             P.Pracht, S.Grimme             |
+       |          Universitaet Bonn, MCTC           |
+       ==============================================
+       Version 2.12,   Thu 19. Mai 16:32:32 CEST 2022
+  Using the xTB program. Compatible with xTB version 6.4.0
+
+   Cite work conducted with this code as
+
+   • P.Pracht, F.Bohle, S.Grimme, PCCP, 2020, 22, 7169-7192.
+   • S.Grimme, JCTC, 2019, 15, 2847-2862.
+
+   and for works involving QCG as
+
+   • S.Spicher, C.Plett, P.Pracht, A.Hansen, S.Grimme,
+     JCTC, 2022, 18 (5), 3174-3189.
+
+   with help from:
+   C.Bannwarth, F.Bohle, S.Ehlert, S.Grimme,
+   C.Plett, P.Pracht, S.Spicher
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+ Command line input:
+ > crest R-P-Phos_1_R-P-Phos_2_best.xyz -cregen R-P-Phos_1_R-P-Phos_2.xyz -notopo -ethr 0.31375 -rthr 0.2 -ewin 4.0
+
+  -cregen : CREGEN standalone usage. Sorting file <R-P-Phos_1_R-P-Phos_2.xyz>
+  -ethr 0.31375
+  -rthr 0.2
+  -ewin 4.0
+ Using only the cregen sorting routine.
+ input  file name : R-P-Phos_1_R-P-Phos_2.xyz
+ output file name : R-P-Phos_1_R-P-Phos_2.xyz.sorted
+ number of atoms                :   109
+ number of points on xyz files  :   24
+ RMSD threshold                 :   0.2000
+ Bconst threshold               :   0.0100
+ population threshold           :   0.0500
+ conformer energy window  /kcal :   4.0000
+ # fragment in coord            :     1
+ number of reliable points      :    24
+ reference state Etot :  -5.2071862554778168     
+ running RMSDs...
+ done.
+ number of doubles removed by rot/RMSD         :          13
+ total number unique points considered further :          11
+       Erel/kcal        Etot weight/tot  conformer     set   degen     origin
+       1   0.000    -5.20719    0.09155    0.36620       1       4     R-P-Phos_2_out_5
+       2   0.000    -5.20719    0.09155                                R-P-Phos_2_out_7
+       3   0.000    -5.20719    0.09155                                R-P-Phos_1_out_5
+       4   0.000    -5.20719    0.09155                                R-P-Phos_1_out_4
+       5   0.002    -5.20718    0.09124    0.18248       2       2     R-P-Phos_1_out_0
+       6   0.002    -5.20718    0.09124                                R-P-Phos_2_out_0
+       7   0.008    -5.20717    0.09033    0.18066       3       2     R-P-Phos_1_out_9
+       8   0.008    -5.20717    0.09033                                R-P-Phos_2_out_9
+       9   0.009    -5.20717    0.09022    0.27066       4       3     R-P-Phos_2_out_8
+      10   0.009    -5.20717    0.09022                                R-P-Phos_2_out_10
+      11   0.009    -5.20717    0.09021                                R-P-Phos_1_out_8
+T /K                                  :   298.15
+E lowest                              :    -5.20719
+ensemble average energy (kcal)        :    0.004
+ensemble entropy (J/mol K, cal/mol K) :   19.937    4.765
+ensemble free energy (kcal/mol)       :   -1.421
+population of lowest in %             :   36.620
+ number of unique conformers for further calc            4
+ list of relative energies saved as "crest.energies"
+
+ -----------------
+ Wall Time Summary
+ -----------------
+              CREGEN wall time :         0h : 0m : 0s
+--------------------
+Overall wall time  : 0h : 0m : 0s
+
+ CREST terminated normally.

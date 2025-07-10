@@ -1,0 +1,109 @@
+ 
+       ==============================================
+       |                                            |
+       |                 C R E S T                  |
+       |                                            |
+       |  Conformer-Rotamer Ensemble Sampling Tool  |
+       |          based on the GFN methods          |
+       |             P.Pracht, S.Grimme             |
+       |          Universitaet Bonn, MCTC           |
+       ==============================================
+       Version 2.11, Tue 9. Feb 11:37:45 CEST 2021
+  Using the xTB program. Compatible with xTB version 6.4.0
+ 
+   Cite work conducted with this code as
+
+   P. Pracht, F. Bohle, S. Grimme, PCCP, 2020, 22, 7169-7192.
+
+   and  S. Grimme, JCTC, 2019, 15, 2847-2862.
+ 
+   with help from:
+   F.Bohle, S.Ehlert, S.Grimme, P.Pracht
+ 
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+ Command line input:
+ > crest 195_cs_196_cs_best.xyz -cregen 195_cs_196_cs.xyz -notopo -ethr 0.31375 -rthr 0.2 -ewin 4.0
+
+  -cregen : CREGEN standalone usage. Sorting file <195_cs_196_cs.xyz>
+  -ethr 0.31375
+  -rthr 0.2
+  -ewin 4.0
+ Using only the cregen sorting routine.
+ input  file name : 195_cs_196_cs.xyz
+ output file name : 195_cs_196_cs.xyz.sorted
+ number of atoms                :   99
+ number of points on xyz files  :   62
+ RMSD threshold                 :   0.2000
+ Bconst threshold               :   0.0100
+ population threshold           :   0.0500
+ conformer energy window  /kcal :   4.0000
+ # fragment in coord            :     1
+ number of reliable points      :    62
+ number of removed by energy    :    16
+ number of remaining points     :    46
+ reference state Etot :  -2555.63980850598     
+ running RMSDs...
+ done.
+ number of doubles removed by rot/RMSD         :           6
+ total number unique points considered further :          40
+       Erel/kcal        Etot weight/tot  conformer     set   degen     origin
+       1   0.000 -2555.63981    0.22500    0.22500       1       1     196_cs_out_12
+       2   0.494 -2555.63902    0.09788    0.65278       2       8     196_cs_out_24
+       3   0.515 -2555.63899    0.09436                                196_cs_out_1
+       4   0.539 -2555.63895    0.09070                                196_cs_out_9
+       5   0.565 -2555.63891    0.08682                                196_cs_out_4
+       6   0.632 -2555.63880    0.07746                                195_cs_out_12
+       7   0.650 -2555.63877    0.07517                                195_cs_out_4
+       8   0.723 -2555.63866    0.06644                                195_cs_out_9
+       9   0.746 -2555.63862    0.06396                                195_cs_out_24
+      10   1.314 -2555.63771    0.02454    0.04664       3       2     196_cs_out_13
+      11   1.376 -2555.63762    0.02210                                195_cs_out_13
+      12   1.898 -2555.63678    0.00917    0.02176       4       3     195_cs_out_22
+      13   2.057 -2555.63653    0.00700                                196_cs_out_28
+      14   2.192 -2555.63632    0.00559                                195_cs_out_28
+      15   2.116 -2555.63644    0.00634    0.01505       5       3     196_cs_out_0
+      16   2.418 -2555.63596    0.00381                                195_cs_out_0
+      17   2.270 -2555.63619    0.00489                                196_cs_out_22
+      18   2.364 -2555.63604    0.00418    0.00418       6       1     195_cs_out_7
+      19   2.446 -2555.63591    0.00364    0.01306       7       4     195_cs_out_10
+      20   2.447 -2555.63591    0.00363                                196_cs_out_26
+      21   2.568 -2555.63572    0.00296                                196_cs_out_10
+      22   2.597 -2555.63567    0.00282                                195_cs_out_26
+      23   2.639 -2555.63560    0.00263    0.00682       8       3     196_cs_out_29
+      24   2.701 -2555.63550    0.00237                                195_cs_out_19
+      25   2.854 -2555.63526    0.00183                                195_cs_out_3
+      26   2.888 -2555.63521    0.00173    0.00388       9       2     196_cs_out_18
+      27   2.757 -2555.63542    0.00215                                196_cs_out_3
+      28   2.997 -2555.63503    0.00144    0.00279      10       2     195_cs_out_29
+      29   3.030 -2555.63498    0.00136                                195_cs_out_23
+      30   3.072 -2555.63491    0.00127    0.00391      11       4     195_cs_out_16
+      31   3.152 -2555.63479    0.00111                                195_cs_out_25
+      32   3.358 -2555.63446    0.00078                                196_cs_out_25
+      33   3.378 -2555.63443    0.00076                                196_cs_out_16
+      34   3.210 -2555.63469    0.00100    0.00266      12       3     196_cs_out_27
+      35   3.228 -2555.63467    0.00097                                196_cs_out_15
+      36   3.439 -2555.63433    0.00068                                195_cs_out_14
+      37   3.664 -2555.63397    0.00047    0.00093      13       2     196_cs_out_5
+      38   3.673 -2555.63395    0.00046                                195_cs_out_15
+      39   3.988 -2555.63345    0.00027    0.00054      14       2     196_cs_out_30
+      40   3.990 -2555.63345    0.00027                                196_cs_out_8
+T /K                                  :   298.15
+E lowest                              : -2555.63981
+ensemble average energy (kcal)        :    0.636
+ensemble entropy (J/mol K, cal/mol K) :   21.323    5.096
+ensemble free energy (kcal/mol)       :   -1.519
+population of lowest in %             :   22.500
+ number of unique conformers for further calc           14
+ list of relative energies saved as "crest.energies"
+ 
+ -----------------
+ Wall Time Summary
+ -----------------
+              CREGEN wall time :         0h : 0m : 2s
+--------------------
+Overall wall time  : 0h : 0m : 2s
+ 
+ CREST terminated normally.

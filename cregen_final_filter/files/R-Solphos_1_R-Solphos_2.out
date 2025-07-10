@@ -1,0 +1,105 @@
+
+       ==============================================
+       |                                            |
+       |                 C R E S T                  |
+       |                                            |
+       |  Conformer-Rotamer Ensemble Sampling Tool  |
+       |          based on the GFN methods          |
+       |             P.Pracht, S.Grimme             |
+       |          Universitaet Bonn, MCTC           |
+       ==============================================
+       Version 2.12,   Thu 19. Mai 16:32:32 CEST 2022
+  Using the xTB program. Compatible with xTB version 6.4.0
+
+   Cite work conducted with this code as
+
+   • P.Pracht, F.Bohle, S.Grimme, PCCP, 2020, 22, 7169-7192.
+   • S.Grimme, JCTC, 2019, 15, 2847-2862.
+
+   and for works involving QCG as
+
+   • S.Spicher, C.Plett, P.Pracht, A.Hansen, S.Grimme,
+     JCTC, 2022, 18 (5), 3174-3189.
+
+   with help from:
+   C.Bannwarth, F.Bohle, S.Ehlert, S.Grimme,
+   C.Plett, P.Pracht, S.Spicher
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+ Command line input:
+ > crest R-Solphos_1_R-Solphos_2_best.xyz -cregen R-Solphos_1_R-Solphos_2.xyz -notopo -ethr 0.31375 -rthr 0.2 -ewin 4.0
+
+  -cregen : CREGEN standalone usage. Sorting file <R-Solphos_1_R-Solphos_2.xyz>
+  -ethr 0.31375
+  -rthr 0.2
+  -ewin 4.0
+ Using only the cregen sorting routine.
+ input  file name : R-Solphos_1_R-Solphos_2.xyz
+ output file name : R-Solphos_1_R-Solphos_2.xyz.sorted
+ number of atoms                :   115
+ number of points on xyz files  :   58
+ RMSD threshold                 :   0.2000
+ Bconst threshold               :   0.0100
+ population threshold           :   0.0500
+ conformer energy window  /kcal :   4.0000
+ # fragment in coord            :     1
+ number of reliable points      :    58
+ reference state Etot :  -5.2142151074535779     
+ running RMSDs...
+ done.
+ number of doubles removed by rot/RMSD         :          25
+ total number unique points considered further :          33
+       Erel/kcal        Etot weight/tot  conformer     set   degen     origin
+       1   0.000    -5.21422    0.03044    0.18261       1       6     R-Solphos_1_out_18
+       2   0.000    -5.21422    0.03043                                R-Solphos_1_out_4
+       3   0.000    -5.21422    0.03043                                R-Solphos_2_out_19
+       4   0.000    -5.21422    0.03043                                R-Solphos_1_out_19
+       5   0.000    -5.21422    0.03043                                R-Solphos_2_out_4
+       6   0.000    -5.21422    0.03043                                R-Solphos_2_out_18
+       7   0.001    -5.21421    0.03037    0.39426       2      13     R-Solphos_1_out_21
+       8   0.001    -5.21421    0.03037                                R-Solphos_1_out_17
+       9   0.001    -5.21421    0.03037                                R-Solphos_2_out_5
+      10   0.001    -5.21421    0.03036                                R-Solphos_2_out_15
+      11   0.002    -5.21421    0.03036                                R-Solphos_1_out_6
+      12   0.002    -5.21421    0.03036                                R-Solphos_2_out_24
+      13   0.002    -5.21421    0.03036                                R-Solphos_1_out_24
+      14   0.002    -5.21421    0.03036                                R-Solphos_2_out_6
+      15   0.003    -5.21421    0.03026                                R-Solphos_1_out_10
+      16   0.003    -5.21421    0.03026                                R-Solphos_2_out_10
+      17   0.003    -5.21421    0.03026                                R-Solphos_1_out_20
+      18   0.003    -5.21421    0.03028                                R-Solphos_1_out_27
+      19   0.003    -5.21421    0.03028                                R-Solphos_1_out_0
+      20   0.003    -5.21421    0.03028    0.36284       3      12     R-Solphos_2_out_11
+      21   0.003    -5.21421    0.03027                                R-Solphos_2_out_28
+      22   0.003    -5.21421    0.03026                                R-Solphos_1_out_22
+      23   0.004    -5.21421    0.03023                                R-Solphos_1_out_16
+      24   0.004    -5.21421    0.03023                                R-Solphos_1_out_26
+      25   0.004    -5.21421    0.03023                                R-Solphos_1_out_2
+      26   0.004    -5.21421    0.03023                                R-Solphos_2_out_7
+      27   0.004    -5.21421    0.03023                                R-Solphos_2_out_16
+      28   0.004    -5.21421    0.03022                                R-Solphos_1_out_13
+      29   0.004    -5.21421    0.03022                                R-Solphos_1_out_1
+      30   0.004    -5.21421    0.03022                                R-Solphos_2_out_8
+      31   0.004    -5.21421    0.03022                                R-Solphos_2_out_1
+      32   0.006    -5.21421    0.03015    0.06029       4       2     R-Solphos_2_out_23
+      33   0.006    -5.21421    0.03015                                R-Solphos_1_out_3
+T /K                                  :   298.15
+E lowest                              :    -5.21422
+ensemble average energy (kcal)        :    0.003
+ensemble entropy (J/mol K, cal/mol K) :   29.072    6.948
+ensemble free energy (kcal/mol)       :   -2.072
+population of lowest in %             :   18.261
+ number of unique conformers for further calc            4
+ list of relative energies saved as "crest.energies"
+
+ -----------------
+ Wall Time Summary
+ -----------------
+              CREGEN wall time :         0h : 0m : 0s
+--------------------
+Overall wall time  : 0h : 0m : 0s
+
+ CREST terminated normally.

@@ -1,0 +1,97 @@
+
+       ==============================================
+       |                                            |
+       |                 C R E S T                  |
+       |                                            |
+       |  Conformer-Rotamer Ensemble Sampling Tool  |
+       |          based on the GFN methods          |
+       |             P.Pracht, S.Grimme             |
+       |          Universitaet Bonn, MCTC           |
+       ==============================================
+       Version 2.12,   Thu 19. Mai 16:32:32 CEST 2022
+  Using the xTB program. Compatible with xTB version 6.4.0
+
+   Cite work conducted with this code as
+
+   • P.Pracht, F.Bohle, S.Grimme, PCCP, 2020, 22, 7169-7192.
+   • S.Grimme, JCTC, 2019, 15, 2847-2862.
+
+   and for works involving QCG as
+
+   • S.Spicher, C.Plett, P.Pracht, A.Hansen, S.Grimme,
+     JCTC, 2022, 18 (5), 3174-3189.
+
+   with help from:
+   C.Bannwarth, F.Bohle, S.Ehlert, S.Grimme,
+   C.Plett, P.Pracht, S.Spicher
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+ Command line input:
+ > crest R-Segphos_1_R-Segphos_2_best.xyz -cregen R-Segphos_1_R-Segphos_2.xyz -notopo -ethr 0.31375 -rthr 0.2 -ewin 4.0
+
+  -cregen : CREGEN standalone usage. Sorting file <R-Segphos_1_R-Segphos_2.xyz>
+  -ethr 0.31375
+  -rthr 0.2
+  -ewin 4.0
+ Using only the cregen sorting routine.
+ input  file name : R-Segphos_1_R-Segphos_2.xyz
+ output file name : R-Segphos_1_R-Segphos_2.xyz.sorted
+ number of atoms                :   101
+ number of points on xyz files  :   26
+ RMSD threshold                 :   0.2000
+ Bconst threshold               :   0.0100
+ population threshold           :   0.0500
+ conformer energy window  /kcal :   4.0000
+ # fragment in coord            :     1
+ number of reliable points      :    26
+ reference state Etot :  -5.0269588253956652     
+ running RMSDs...
+ done.
+ number of doubles removed by rot/RMSD         :           1
+ total number unique points considered further :          25
+       Erel/kcal        Etot weight/tot  conformer     set   degen     origin
+       1   0.000    -5.02696    0.04030    0.24132       1       6     R-Segphos_2_out_3
+       2   0.000    -5.02696    0.04029                                R-Segphos_1_out_10
+       3   0.003    -5.02695    0.04007                                R-Segphos_2_out_1
+       4   0.003    -5.02695    0.04007                                R-Segphos_2_out_9
+       5   0.000    -5.02696    0.04030                                R-Segphos_2_out_12
+       6   0.000    -5.02696    0.04029                                R-Segphos_2_out_4
+       7   0.000    -5.02696    0.04029    0.16072       2       4     R-Segphos_1_out_7
+       8   0.003    -5.02695    0.04007                                R-Segphos_1_out_12
+       9   0.003    -5.02695    0.04007                                R-Segphos_1_out_2
+      10   0.000    -5.02696    0.04029                                R-Segphos_2_out_7
+      11   0.000    -5.02696    0.04029    0.16071       3       4     R-Segphos_1_out_4
+      12   0.003    -5.02695    0.04007                                R-Segphos_1_out_9
+      13   0.000    -5.02696    0.04029                                R-Segphos_1_out_11
+      14   0.003    -5.02695    0.04006                                R-Segphos_2_out_11
+      15   0.006    -5.02695    0.03988    0.35947       4       9     R-Segphos_2_out_5
+      16   0.000    -5.02696    0.04029                                R-Segphos_1_out_3
+      17   0.006    -5.02695    0.03988                                R-Segphos_1_out_5
+      18   0.006    -5.02695    0.03988                                R-Segphos_2_out_8
+      19   0.006    -5.02695    0.03987                                R-Segphos_1_out_8
+      20   0.007    -5.02695    0.03979                                R-Segphos_1_out_0
+      21   0.000    -5.02696    0.04029                                R-Segphos_2_out_10
+      22   0.007    -5.02695    0.03979                                R-Segphos_2_out_0
+      23   0.008    -5.02695    0.03979                                R-Segphos_2_out_2
+      24   0.021    -5.02693    0.03889    0.07778       5       2     R-Segphos_1_out_6
+      25   0.021    -5.02693    0.03889                                R-Segphos_2_out_6
+T /K                                  :   298.15
+E lowest                              :    -5.02696
+ensemble average energy (kcal)        :    0.004
+ensemble entropy (J/mol K, cal/mol K) :   26.763    6.397
+ensemble free energy (kcal/mol)       :   -1.907
+population of lowest in %             :   24.132
+ number of unique conformers for further calc            5
+ list of relative energies saved as "crest.energies"
+
+ -----------------
+ Wall Time Summary
+ -----------------
+              CREGEN wall time :         0h : 0m : 0s
+--------------------
+Overall wall time  : 0h : 0m : 0s
+
+ CREST terminated normally.

@@ -1,0 +1,72 @@
+ 
+       ==============================================
+       |                                            |
+       |                 C R E S T                  |
+       |                                            |
+       |  Conformer-Rotamer Ensemble Sampling Tool  |
+       |          based on the GFN methods          |
+       |             P.Pracht, S.Grimme             |
+       |          Universitaet Bonn, MCTC           |
+       ==============================================
+       Version 2.11, Tue 9. Feb 11:37:45 CEST 2021
+  Using the xTB program. Compatible with xTB version 6.4.0
+ 
+   Cite work conducted with this code as
+
+   P. Pracht, F. Bohle, S. Grimme, PCCP, 2020, 22, 7169-7192.
+
+   and  S. Grimme, JCTC, 2019, 15, 2847-2862.
+ 
+   with help from:
+   F.Bohle, S.Ehlert, S.Grimme, P.Pracht
+ 
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+ Command line input:
+ > crest 33_cs_34_cs_best.xyz -cregen 33_cs_34_cs.xyz -notopo -ethr 0.31375 -rthr 0.2 -ewin 4.0
+
+  -cregen : CREGEN standalone usage. Sorting file <33_cs_34_cs.xyz>
+  -ethr 0.31375
+  -rthr 0.2
+  -ewin 4.0
+ Using only the cregen sorting routine.
+ input  file name : 33_cs_34_cs.xyz
+ output file name : 33_cs_34_cs.xyz.sorted
+ number of atoms                :   87
+ number of points on xyz files  :   5
+ RMSD threshold                 :   0.2000
+ Bconst threshold               :   0.0100
+ population threshold           :   0.0500
+ conformer energy window  /kcal :   4.0000
+ # fragment in coord            :     1
+ number of reliable points      :     5
+ reference state Etot :  -2324.14436033865     
+ running RMSDs...
+ done.
+ number of doubles removed by rot/RMSD         :           0
+ total number unique points considered further :           5
+       Erel/kcal        Etot weight/tot  conformer     set   degen     origin
+       1   0.000 -2324.14436    0.47808    0.47808       1       1     34_cs_out_0
+       2   0.341 -2324.14382    0.26914    0.26914       2       1     34_cs_out_1
+       3   0.771 -2324.14313    0.13034    0.13034       3       1     33_cs_out_2
+       4   1.138 -2324.14255    0.07011    0.12245       4       2     33_cs_out_0
+       5   1.312 -2324.14227    0.05234                                33_cs_out_1
+T /K                                  :   298.15
+E lowest                              : -2324.14436
+ensemble average energy (kcal)        :    0.341
+ensemble entropy (J/mol K, cal/mol K) :   10.912    2.608
+ensemble free energy (kcal/mol)       :   -0.778
+population of lowest in %             :   47.808
+ number of unique conformers for further calc            4
+ list of relative energies saved as "crest.energies"
+ 
+ -----------------
+ Wall Time Summary
+ -----------------
+              CREGEN wall time :         0h : 0m : 1s
+--------------------
+Overall wall time  : 0h : 0m : 1s
+ 
+ CREST terminated normally.

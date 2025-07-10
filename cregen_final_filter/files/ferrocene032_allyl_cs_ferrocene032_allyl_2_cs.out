@@ -1,0 +1,81 @@
+ 
+       ==============================================
+       |                                            |
+       |                 C R E S T                  |
+       |                                            |
+       |  Conformer-Rotamer Ensemble Sampling Tool  |
+       |          based on the GFN methods          |
+       |             P.Pracht, S.Grimme             |
+       |          Universitaet Bonn, MCTC           |
+       ==============================================
+       Version 2.11, Tue 9. Feb 11:37:45 CEST 2021
+  Using the xTB program. Compatible with xTB version 6.4.0
+ 
+   Cite work conducted with this code as
+
+   P. Pracht, F. Bohle, S. Grimme, PCCP, 2020, 22, 7169-7192.
+
+   and  S. Grimme, JCTC, 2019, 15, 2847-2862.
+ 
+   with help from:
+   F.Bohle, S.Ehlert, S.Grimme, P.Pracht
+ 
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+ Command line input:
+ > crest ferrocene032_allyl_cs_ferrocene032_allyl_2_cs_best.xyz -cregen ferrocene032_allyl_cs_ferrocene032_allyl_2_cs.xyz -notopo -ethr 0.31375 -rthr 0.2 -ewin 4.0
+
+  -cregen : CREGEN standalone usage. Sorting file <ferrocene032_allyl_cs_ferrocene032_allyl_2_cs.xyz>
+  -ethr 0.31375
+  -rthr 0.2
+  -ewin 4.0
+ Using only the cregen sorting routine.
+ input  file name : ferrocene032_allyl_cs_ferrocene032_allyl_2_cs.xyz
+ output file name : ferrocene032_allyl_cs_ferrocene032_allyl_2_cs.xyz.sorted
+ number of atoms                :   122
+ number of points on xyz files  :   18
+ RMSD threshold                 :   0.2000
+ Bconst threshold               :   0.0100
+ population threshold           :   0.0500
+ conformer energy window  /kcal :   4.0000
+ # fragment in coord            :     1
+ number of reliable points      :    18
+ number of removed by energy    :     4
+ number of remaining points     :    14
+ reference state Etot :  -4283.71288849801     
+ running RMSDs...
+ done.
+ number of doubles removed by rot/RMSD         :           2
+ total number unique points considered further :          12
+       Erel/kcal        Etot weight/tot  conformer     set   degen     origin
+       1   0.000 -4283.71289    0.46654    0.46654       1       1     ferrocene032_allyl_cs_out_1
+       2   0.121 -4283.71270    0.38041    0.38041       2       1     ferrocene032_allyl_2_cs_out_0
+       3   1.263 -4283.71088    0.05543    0.05543       3       1     ferrocene032_allyl_2_cs_out_3
+       4   1.560 -4283.71040    0.03361    0.03361       4       1     ferrocene032_allyl_cs_out_8
+       5   1.676 -4283.71022    0.02761    0.02761       5       1     ferrocene032_allyl_2_cs_out_7
+       6   2.081 -4283.70957    0.01395    0.01395       6       1     ferrocene032_allyl_cs_out_4
+       7   2.246 -4283.70931    0.01057    0.01057       7       1     ferrocene032_allyl_cs_out_0
+       8   2.659 -4283.70865    0.00527    0.00527       8       1     ferrocene032_allyl_cs_out_5
+       9   2.999 -4283.70811    0.00297    0.00297       9       1     ferrocene032_allyl_cs_out_9
+      10   3.387 -4283.70749    0.00154    0.00154      10       1     ferrocene032_allyl_cs_out_7
+      11   3.479 -4283.70734    0.00132    0.00132      11       1     ferrocene032_allyl_2_cs_out_6
+      12   3.796 -4283.70684    0.00077    0.00077      12       1     ferrocene032_allyl_2_cs_out_1
+T /K                                  :   298.15
+E lowest                              : -4283.71289
+ensemble average energy (kcal)        :    0.303
+ensemble entropy (J/mol K, cal/mol K) :   10.591    2.531
+ensemble free energy (kcal/mol)       :   -0.755
+population of lowest in %             :   46.654
+ number of unique conformers for further calc           12
+ list of relative energies saved as "crest.energies"
+ 
+ -----------------
+ Wall Time Summary
+ -----------------
+              CREGEN wall time :         0h : 0m : 1s
+--------------------
+Overall wall time  : 0h : 0m : 1s
+ 
+ CREST terminated normally.

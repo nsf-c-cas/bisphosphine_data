@@ -1,0 +1,152 @@
+
+       ==============================================
+       |                                            |
+       |                 C R E S T                  |
+       |                                            |
+       |  Conformer-Rotamer Ensemble Sampling Tool  |
+       |          based on the GFN methods          |
+       |             P.Pracht, S.Grimme             |
+       |          Universitaet Bonn, MCTC           |
+       ==============================================
+       Version 2.12,   Thu 19. Mai 16:32:32 CEST 2022
+  Using the xTB program. Compatible with xTB version 6.4.0
+
+   Cite work conducted with this code as
+
+   • P.Pracht, F.Bohle, S.Grimme, PCCP, 2020, 22, 7169-7192.
+   • S.Grimme, JCTC, 2019, 15, 2847-2862.
+
+   and for works involving QCG as
+
+   • S.Spicher, C.Plett, P.Pracht, A.Hansen, S.Grimme,
+     JCTC, 2022, 18 (5), 3174-3189.
+
+   with help from:
+   C.Bannwarth, F.Bohle, S.Ehlert, S.Grimme,
+   C.Plett, P.Pracht, S.Spicher
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+ Command line input:
+ > crest R-35-tBu-4-MeO-Solphos_1_R-35-tBu-4-MeO-Solphos_2_best.xyz -cregen R-35-tBu-4-MeO-Solphos_1_R-35-tBu-4-MeO-Solphos_2.xyz -notopo -ethr 0.31375 -rthr 0.2 -ewin 4.0
+
+  -cregen : CREGEN standalone usage. Sorting file <R-35-tBu-4-MeO-Solphos_1_R-35-tBu-4-MeO-Solphos_2.xyz>
+  -ethr 0.31375
+  -rthr 0.2
+  -ewin 4.0
+ Using only the cregen sorting routine.
+ input  file name : R-35-tBu-4-MeO-Solphos_1_R-35-tBu-4-MeO-Solphos_2.xyz
+ output file name : R-35-tBu-4-MeO-Solphos_1_R-35-tBu-4-MeO-Solphos_2.xyz.sorted
+ number of atoms                :   227
+ number of points on xyz files  :   80
+ RMSD threshold                 :   0.2000
+ Bconst threshold               :   0.0100
+ population threshold           :   0.0500
+ conformer energy window  /kcal :   4.0000
+ # fragment in coord            :     1
+ number of reliable points      :    80
+ reference state Etot :  -7.9477305296395855     
+ running RMSDs...
+ done.
+ number of doubles removed by rot/RMSD         :           0
+ total number unique points considered further :          80
+       Erel/kcal        Etot weight/tot  conformer     set   degen     origin
+       1   0.000    -7.94773    0.01261    0.06280       1       5     R-35-tBu-4-MeO-Solphos_2_out_34
+       2   0.001    -7.94773    0.01258                                R-35-tBu-4-MeO-Solphos_2_out_14
+       3   0.003    -7.94773    0.01254                                R-35-tBu-4-MeO-Solphos_2_out_29
+       4   0.003    -7.94773    0.01254                                R-35-tBu-4-MeO-Solphos_2_out_25
+       5   0.004    -7.94772    0.01253                                R-35-tBu-4-MeO-Solphos_2_out_20
+       6   0.004    -7.94772    0.01252    0.12546       2      10     R-35-tBu-4-MeO-Solphos_1_out_1
+       7   0.001    -7.94773    0.01258                                R-35-tBu-4-MeO-Solphos_2_out_6
+       8   0.005    -7.94772    0.01251                                R-35-tBu-4-MeO-Solphos_2_out_21
+       9   0.002    -7.94773    0.01258                                R-35-tBu-4-MeO-Solphos_2_out_15
+      10   0.001    -7.94773    0.01259                                R-35-tBu-4-MeO-Solphos_2_out_27
+      11   0.005    -7.94772    0.01251                                R-35-tBu-4-MeO-Solphos_1_out_3
+      12   0.005    -7.94772    0.01251                                R-35-tBu-4-MeO-Solphos_1_out_12
+      13   0.001    -7.94773    0.01259                                R-35-tBu-4-MeO-Solphos_2_out_0
+      14   0.003    -7.94773    0.01254                                R-35-tBu-4-MeO-Solphos_2_out_30
+      15   0.003    -7.94773    0.01254                                R-35-tBu-4-MeO-Solphos_2_out_23
+      16   0.005    -7.94772    0.01251    0.06275       3       5     R-35-tBu-4-MeO-Solphos_1_out_15
+      17   0.004    -7.94772    0.01253                                R-35-tBu-4-MeO-Solphos_2_out_17
+      18   0.001    -7.94773    0.01259                                R-35-tBu-4-MeO-Solphos_2_out_2
+      19   0.003    -7.94773    0.01254                                R-35-tBu-4-MeO-Solphos_2_out_12
+      20   0.001    -7.94773    0.01259                                R-35-tBu-4-MeO-Solphos_2_out_9
+      21   0.005    -7.94772    0.01251    0.01251       4       1     R-35-tBu-4-MeO-Solphos_1_out_17
+      22   0.004    -7.94772    0.01252    0.03760       5       3     R-35-tBu-4-MeO-Solphos_1_out_32
+      23   0.005    -7.94772    0.01251                                R-35-tBu-4-MeO-Solphos_1_out_4
+      24   0.002    -7.94773    0.01258                                R-35-tBu-4-MeO-Solphos_2_out_13
+      25   0.005    -7.94772    0.01251    0.03757       6       3     R-35-tBu-4-MeO-Solphos_1_out_16
+      26   0.005    -7.94772    0.01250                                R-35-tBu-4-MeO-Solphos_2_out_33
+      27   0.002    -7.94773    0.01256                                R-35-tBu-4-MeO-Solphos_2_out_31
+      28   0.005    -7.94772    0.01251    0.03750       7       3     R-35-tBu-4-MeO-Solphos_1_out_0
+      29   0.005    -7.94772    0.01250                                R-35-tBu-4-MeO-Solphos_2_out_35
+      30   0.006    -7.94772    0.01249                                R-35-tBu-4-MeO-Solphos_2_out_10
+      31   0.006    -7.94772    0.01249    0.03747       8       3     R-35-tBu-4-MeO-Solphos_2_out_8
+      32   0.006    -7.94772    0.01248                                R-35-tBu-4-MeO-Solphos_1_out_22
+      33   0.005    -7.94772    0.01250                                R-35-tBu-4-MeO-Solphos_1_out_11
+      34   0.006    -7.94772    0.01248    0.01248       9       1     R-35-tBu-4-MeO-Solphos_1_out_18
+      35   0.006    -7.94772    0.01248    0.02496      10       2     R-35-tBu-4-MeO-Solphos_1_out_39
+      36   0.007    -7.94772    0.01247                                R-35-tBu-4-MeO-Solphos_2_out_16
+      37   0.007    -7.94772    0.01247    0.02491      11       2     R-35-tBu-4-MeO-Solphos_2_out_5
+      38   0.008    -7.94772    0.01244                                R-35-tBu-4-MeO-Solphos_2_out_11
+      39   0.005    -7.94772    0.01251    0.16249      12      13     R-35-tBu-4-MeO-Solphos_2_out_22
+      40   0.002    -7.94773    0.01256                                R-35-tBu-4-MeO-Solphos_2_out_26
+      41   0.005    -7.94772    0.01251                                R-35-tBu-4-MeO-Solphos_1_out_27
+      42   0.005    -7.94772    0.01250                                R-35-tBu-4-MeO-Solphos_1_out_35
+      43   0.002    -7.94773    0.01256                                R-35-tBu-4-MeO-Solphos_2_out_1
+      44   0.007    -7.94772    0.01246                                R-35-tBu-4-MeO-Solphos_1_out_29
+      45   0.005    -7.94772    0.01250                                R-35-tBu-4-MeO-Solphos_2_out_38
+      46   0.006    -7.94772    0.01248                                R-35-tBu-4-MeO-Solphos_1_out_34
+      47   0.005    -7.94772    0.01250                                R-35-tBu-4-MeO-Solphos_1_out_19
+      48   0.003    -7.94773    0.01255                                R-35-tBu-4-MeO-Solphos_2_out_4
+      49   0.005    -7.94772    0.01250                                R-35-tBu-4-MeO-Solphos_1_out_31
+      50   0.007    -7.94772    0.01246                                R-35-tBu-4-MeO-Solphos_1_out_36
+      51   0.009    -7.94772    0.01243                                R-35-tBu-4-MeO-Solphos_1_out_38
+      52   0.003    -7.94773    0.01255    0.12482      13      10     R-35-tBu-4-MeO-Solphos_2_out_3
+      53   0.005    -7.94772    0.01251                                R-35-tBu-4-MeO-Solphos_1_out_6
+      54   0.006    -7.94772    0.01248                                R-35-tBu-4-MeO-Solphos_1_out_9
+      55   0.005    -7.94772    0.01250                                R-35-tBu-4-MeO-Solphos_1_out_13
+      56   0.009    -7.94772    0.01243                                R-35-tBu-4-MeO-Solphos_1_out_33
+      57   0.008    -7.94772    0.01245                                R-35-tBu-4-MeO-Solphos_2_out_19
+      58   0.008    -7.94772    0.01245                                R-35-tBu-4-MeO-Solphos_1_out_21
+      59   0.008    -7.94772    0.01245                                R-35-tBu-4-MeO-Solphos_1_out_2
+      60   0.006    -7.94772    0.01248                                R-35-tBu-4-MeO-Solphos_1_out_5
+      61   0.003    -7.94773    0.01255                                R-35-tBu-4-MeO-Solphos_2_out_18
+      62   0.006    -7.94772    0.01250    0.12424      14      10     R-35-tBu-4-MeO-Solphos_1_out_8
+      63   0.011    -7.94771    0.01238                                R-35-tBu-4-MeO-Solphos_1_out_26
+      64   0.012    -7.94771    0.01236                                R-35-tBu-4-MeO-Solphos_1_out_37
+      65   0.008    -7.94772    0.01245                                R-35-tBu-4-MeO-Solphos_1_out_30
+      66   0.009    -7.94772    0.01242                                R-35-tBu-4-MeO-Solphos_2_out_32
+      67   0.011    -7.94771    0.01238                                R-35-tBu-4-MeO-Solphos_1_out_25
+      68   0.006    -7.94772    0.01249                                R-35-tBu-4-MeO-Solphos_2_out_37
+      69   0.008    -7.94772    0.01244                                R-35-tBu-4-MeO-Solphos_2_out_39
+      70   0.012    -7.94771    0.01235                                R-35-tBu-4-MeO-Solphos_1_out_28
+      71   0.006    -7.94772    0.01248                                R-35-tBu-4-MeO-Solphos_1_out_20
+      72   0.003    -7.94773    0.01254    0.02505      15       2     R-35-tBu-4-MeO-Solphos_2_out_7
+      73   0.005    -7.94772    0.01251                                R-35-tBu-4-MeO-Solphos_1_out_7
+      74   0.006    -7.94772    0.01249    0.01249      16       1     R-35-tBu-4-MeO-Solphos_1_out_10
+      75   0.006    -7.94772    0.01249    0.02502      17       2     R-35-tBu-4-MeO-Solphos_1_out_14
+      76   0.004    -7.94772    0.01253                                R-35-tBu-4-MeO-Solphos_2_out_36
+      77   0.006    -7.94772    0.01249    0.02497      18       2     R-35-tBu-4-MeO-Solphos_2_out_24
+      78   0.006    -7.94772    0.01248                                R-35-tBu-4-MeO-Solphos_1_out_23
+      79   0.006    -7.94772    0.01248    0.01248      19       1     R-35-tBu-4-MeO-Solphos_2_out_28
+      80   0.008    -7.94772    0.01245    0.01245      20       1     R-35-tBu-4-MeO-Solphos_1_out_24
+T /K                                  :   298.15
+E lowest                              :    -7.94773
+ensemble average energy (kcal)        :    0.005
+ensemble entropy (J/mol K, cal/mol K) :   36.434    8.708
+ensemble free energy (kcal/mol)       :   -2.596
+population of lowest in %             :    6.280
+ number of unique conformers for further calc           20
+ list of relative energies saved as "crest.energies"
+
+ -----------------
+ Wall Time Summary
+ -----------------
+              CREGEN wall time :         0h : 0m : 0s
+--------------------
+Overall wall time  : 0h : 0m : 0s
+
+ CREST terminated normally.

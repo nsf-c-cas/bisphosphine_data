@@ -1,0 +1,136 @@
+ 
+       ==============================================
+       |                                            |
+       |                 C R E S T                  |
+       |                                            |
+       |  Conformer-Rotamer Ensemble Sampling Tool  |
+       |          based on the GFN methods          |
+       |             P.Pracht, S.Grimme             |
+       |          Universitaet Bonn, MCTC           |
+       ==============================================
+       Version 2.11, Tue 9. Feb 11:37:45 CEST 2021
+  Using the xTB program. Compatible with xTB version 6.4.0
+ 
+   Cite work conducted with this code as
+
+   P. Pracht, F. Bohle, S. Grimme, PCCP, 2020, 22, 7169-7192.
+
+   and  S. Grimme, JCTC, 2019, 15, 2847-2862.
+ 
+   with help from:
+   F.Bohle, S.Ehlert, S.Grimme, P.Pracht
+ 
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+ Command line input:
+ > crest 107_cs_108_cs_best.xyz -cregen 107_cs_108_cs.xyz -notopo -ethr 0.31375 -rthr 0.2 -ewin 4.0
+
+  -cregen : CREGEN standalone usage. Sorting file <107_cs_108_cs.xyz>
+  -ethr 0.31375
+  -rthr 0.2
+  -ewin 4.0
+ Using only the cregen sorting routine.
+ input  file name : 107_cs_108_cs.xyz
+ output file name : 107_cs_108_cs.xyz.sorted
+ number of atoms                :   85
+ number of points on xyz files  :   80
+ RMSD threshold                 :   0.2000
+ Bconst threshold               :   0.0100
+ population threshold           :   0.0500
+ conformer energy window  /kcal :   4.0000
+ # fragment in coord            :     1
+ number of reliable points      :    80
+ number of removed by energy    :    10
+ number of remaining points     :    70
+ reference state Etot :  -2097.79240650996     
+ running RMSDs...
+ done.
+ number of doubles removed by rot/RMSD         :           3
+ total number unique points considered further :          67
+       Erel/kcal        Etot weight/tot  conformer     set   degen     origin
+       1   0.000 -2097.79241    0.16858    0.26894       1       2     108_cs_out_12
+       2   0.308 -2097.79192    0.10036                                107_cs_out_12
+       3   0.352 -2097.79185    0.09316    0.16888       2       2     108_cs_out_4
+       4   0.475 -2097.79165    0.07571                                107_cs_out_4
+       5   0.375 -2097.79181    0.08950    0.15214       3       2     107_cs_out_0
+       6   0.587 -2097.79147    0.06264                                108_cs_out_0
+       7   0.638 -2097.79139    0.05745    0.05745       4       1     108_cs_out_2
+       8   0.933 -2097.79092    0.03495    0.03495       5       1     107_cs_out_1
+       9   0.963 -2097.79087    0.03324    0.06340       6       2     107_cs_out_2
+      10   1.021 -2097.79078    0.03016                                108_cs_out_3
+      11   1.273 -2097.79038    0.01970    0.01970       7       1     108_cs_out_1
+      12   1.353 -2097.79025    0.01722    0.01722       8       1     108_cs_out_8
+      13   1.433 -2097.79012    0.01505    0.01505       9       1     107_cs_out_3
+      14   1.479 -2097.79005    0.01392    0.04642      10       4     107_cs_out_39
+      15   1.674 -2097.78974    0.01002                                108_cs_out_21
+      16   1.724 -2097.78966    0.00920                                107_cs_out_8
+      17   1.507 -2097.79000    0.01327                                107_cs_out_9
+      18   1.528 -2097.78997    0.01282    0.01282      11       1     107_cs_out_7
+      19   1.768 -2097.78959    0.00856    0.00856      12       1     108_cs_out_39
+      20   1.598 -2097.78986    0.01140    0.01140      13       1     107_cs_out_21
+      21   1.836 -2097.78948    0.00762    0.01472      14       2     108_cs_out_23
+      22   1.878 -2097.78941    0.00710                                107_cs_out_13
+      23   1.953 -2097.78929    0.00626    0.00626      15       1     108_cs_out_9
+      24   1.988 -2097.78924    0.00590    0.01174      16       2     107_cs_out_6
+      25   1.995 -2097.78923    0.00583                                108_cs_out_15
+      26   2.111 -2097.78904    0.00480    0.01458      17       3     107_cs_out_23
+      27   2.054 -2097.78913    0.00528                                107_cs_out_5
+      28   2.148 -2097.78898    0.00451                                108_cs_out_17
+      29   1.863 -2097.78944    0.00729    0.00729      18       1     108_cs_out_7
+      30   2.236 -2097.78884    0.00388    0.00778      19       2     107_cs_out_14
+      31   2.234 -2097.78885    0.00390                                107_cs_out_11
+      32   2.294 -2097.78875    0.00352    0.00352      20       1     108_cs_out_5
+      33   2.084 -2097.78909    0.00502    0.00826      21       2     108_cs_out_11
+      34   2.344 -2097.78867    0.00324                                108_cs_out_6
+      35   2.376 -2097.78862    0.00307    0.00652      22       2     107_cs_out_31
+      36   2.306 -2097.78873    0.00345                                107_cs_out_18
+      37   2.379 -2097.78862    0.00305    0.00305      23       1     107_cs_out_15
+      38   2.506 -2097.78841    0.00246    0.00964      24       4     108_cs_out_25
+      39   2.382 -2097.78861    0.00304                                107_cs_out_20
+      40   2.596 -2097.78827    0.00211                                108_cs_out_20
+      41   2.622 -2097.78823    0.00203                                108_cs_out_31
+      42   2.607 -2097.78825    0.00208    0.00208      25       1     108_cs_out_18
+      43   2.418 -2097.78855    0.00286    0.00598      26       2     107_cs_out_25
+      44   2.366 -2097.78864    0.00312                                108_cs_out_14
+      45   2.421 -2097.78855    0.00284    0.00487      27       2     107_cs_out_34
+      46   2.623 -2097.78823    0.00202                                108_cs_out_34
+      47   2.732 -2097.78805    0.00168    0.00168      28       1     107_cs_out_17
+      48   2.845 -2097.78787    0.00139    0.00258      29       2     108_cs_out_22
+      49   2.937 -2097.78773    0.00119                                107_cs_out_22
+      50   2.926 -2097.78774    0.00121    0.00717      30       7     107_cs_out_19
+      51   2.984 -2097.78765    0.00110                                107_cs_out_29
+      52   3.014 -2097.78760    0.00105                                107_cs_out_36
+      53   3.026 -2097.78758    0.00103                                107_cs_out_10
+      54   3.135 -2097.78741    0.00085                                108_cs_out_10
+      55   3.060 -2097.78753    0.00097                                107_cs_out_33
+      56   3.063 -2097.78753    0.00096                                108_cs_out_19
+      57   3.074 -2097.78751    0.00094    0.00164      31       2     108_cs_out_36
+      58   3.255 -2097.78722    0.00070                                108_cs_out_33
+      59   3.227 -2097.78726    0.00073    0.00073      32       1     108_cs_out_30
+      60   3.255 -2097.78722    0.00070    0.00070      33       1     108_cs_out_29
+      61   3.481 -2097.78686    0.00048    0.00117      34       3     108_cs_out_28
+      62   3.720 -2097.78648    0.00032                                108_cs_out_27
+      63   3.613 -2097.78665    0.00038                                107_cs_out_30
+      64   3.679 -2097.78654    0.00034    0.00034      35       1     107_cs_out_27
+      65   3.800 -2097.78635    0.00028    0.00051      36       2     107_cs_out_24
+      66   3.900 -2097.78619    0.00023                                108_cs_out_24
+      67   3.810 -2097.78633    0.00027    0.00027      37       1     107_cs_out_28
+T /K                                  :   298.15
+E lowest                              : -2097.79241
+ensemble average energy (kcal)        :    0.779
+ensemble entropy (J/mol K, cal/mol K) :   25.730    6.150
+ensemble free energy (kcal/mol)       :   -1.834
+population of lowest in %             :   26.894
+ number of unique conformers for further calc           37
+ list of relative energies saved as "crest.energies"
+ 
+ -----------------
+ Wall Time Summary
+ -----------------
+              CREGEN wall time :         0h : 0m : 9s
+--------------------
+Overall wall time  : 0h : 0m : 9s
+ 
+ CREST terminated normally.

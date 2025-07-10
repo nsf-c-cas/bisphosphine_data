@@ -1,0 +1,137 @@
+
+       ==============================================
+       |                                            |
+       |                 C R E S T                  |
+       |                                            |
+       |  Conformer-Rotamer Ensemble Sampling Tool  |
+       |          based on the GFN methods          |
+       |             P.Pracht, S.Grimme             |
+       |          Universitaet Bonn, MCTC           |
+       ==============================================
+       Version 2.12,   Thu 19. Mai 16:32:32 CEST 2022
+  Using the xTB program. Compatible with xTB version 6.4.0
+
+   Cite work conducted with this code as
+
+   • P.Pracht, F.Bohle, S.Grimme, PCCP, 2020, 22, 7169-7192.
+   • S.Grimme, JCTC, 2019, 15, 2847-2862.
+
+   and for works involving QCG as
+
+   • S.Spicher, C.Plett, P.Pracht, A.Hansen, S.Grimme,
+     JCTC, 2022, 18 (5), 3174-3189.
+
+   with help from:
+   C.Bannwarth, F.Bohle, S.Ehlert, S.Grimme,
+   C.Plett, P.Pracht, S.Spicher
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+ Command line input:
+ > crest S-C3-TUNEPHOS_1_S-C3-TUNEPHOS_2_best.xyz -cregen S-C3-TUNEPHOS_1_S-C3-TUNEPHOS_2.xyz -notopo -ethr 0.31375 -rthr 0.2 -ewin 4.0
+
+  -cregen : CREGEN standalone usage. Sorting file <S-C3-TUNEPHOS_1_S-C3-TUNEPHOS_2.xyz>
+  -ethr 0.31375
+  -rthr 0.2
+  -ewin 4.0
+ Using only the cregen sorting routine.
+ input  file name : S-C3-TUNEPHOS_1_S-C3-TUNEPHOS_2.xyz
+ output file name : S-C3-TUNEPHOS_1_S-C3-TUNEPHOS_2.xyz.sorted
+ number of atoms                :   104
+ number of points on xyz files  :   80
+ RMSD threshold                 :   0.2000
+ Bconst threshold               :   0.0100
+ population threshold           :   0.0500
+ conformer energy window  /kcal :   4.0000
+ # fragment in coord            :     1
+ number of reliable points      :    80
+ reference state Etot :  -4.8519233632602070     
+ running RMSDs...
+ done.
+ number of doubles removed by rot/RMSD         :          15
+ total number unique points considered further :          65
+       Erel/kcal        Etot weight/tot  conformer     set   degen     origin
+       1   0.000    -4.85192    0.01554    0.24778       1      16     S-C3-TUNEPHOS_2_out_30
+       2   0.000    -4.85192    0.01553                                S-C3-TUNEPHOS_2_out_29
+       3   0.001    -4.85192    0.01552                                S-C3-TUNEPHOS_1_out_30
+       4   0.001    -4.85192    0.01552                                S-C3-TUNEPHOS_1_out_23
+       5   0.000    -4.85192    0.01553                                S-C3-TUNEPHOS_1_out_28
+       6   0.005    -4.85192    0.01541                                S-C3-TUNEPHOS_2_out_4
+       7   0.000    -4.85192    0.01553                                S-C3-TUNEPHOS_1_out_29
+       8   0.001    -4.85192    0.01552                                S-C3-TUNEPHOS_1_out_19
+       9   0.001    -4.85192    0.01552                                S-C3-TUNEPHOS_1_out_6
+      10   0.008    -4.85191    0.01533                                S-C3-TUNEPHOS_1_out_34
+      11   0.001    -4.85192    0.01552                                S-C3-TUNEPHOS_2_out_24
+      12   0.001    -4.85192    0.01552                                S-C3-TUNEPHOS_1_out_24
+      13   0.005    -4.85192    0.01541                                S-C3-TUNEPHOS_1_out_27
+      14   0.008    -4.85191    0.01533                                S-C3-TUNEPHOS_1_out_10
+      15   0.001    -4.85192    0.01552                                S-C3-TUNEPHOS_2_out_14
+      16   0.001    -4.85192    0.01552                                S-C3-TUNEPHOS_1_out_5
+      17   0.001    -4.85192    0.01552    0.12358       2       8     S-C3-TUNEPHOS_1_out_20
+      18   0.009    -4.85191    0.01531                                S-C3-TUNEPHOS_1_out_3
+      19   0.001    -4.85192    0.01552                                S-C3-TUNEPHOS_2_out_7
+      20   0.008    -4.85191    0.01533                                S-C3-TUNEPHOS_1_out_11
+      21   0.001    -4.85192    0.01552                                S-C3-TUNEPHOS_2_out_16
+      22   0.001    -4.85192    0.01552                                S-C3-TUNEPHOS_2_out_5
+      23   0.008    -4.85191    0.01533                                S-C3-TUNEPHOS_2_out_21
+      24   0.001    -4.85192    0.01552                                S-C3-TUNEPHOS_2_out_25
+      25   0.009    -4.85191    0.01531    0.13827       3       9     S-C3-TUNEPHOS_1_out_0
+      26   0.014    -4.85190    0.01517                                S-C3-TUNEPHOS_1_out_17
+      27   0.001    -4.85192    0.01552                                S-C3-TUNEPHOS_2_out_32
+      28   0.008    -4.85191    0.01533                                S-C3-TUNEPHOS_2_out_35
+      29   0.001    -4.85192    0.01552                                S-C3-TUNEPHOS_2_out_8
+      30   0.014    -4.85190    0.01516                                S-C3-TUNEPHOS_2_out_18
+      31   0.008    -4.85191    0.01533                                S-C3-TUNEPHOS_2_out_11
+      32   0.001    -4.85192    0.01552                                S-C3-TUNEPHOS_2_out_6
+      33   0.005    -4.85192    0.01541                                S-C3-TUNEPHOS_1_out_36
+      34   0.014    -4.85190    0.01517    0.03057       4       2     S-C3-TUNEPHOS_2_out_20
+      35   0.005    -4.85192    0.01541                                S-C3-TUNEPHOS_2_out_27
+      36   0.005    -4.85192    0.01541    0.06116       5       4     S-C3-TUNEPHOS_1_out_1
+      37   0.008    -4.85191    0.01533                                S-C3-TUNEPHOS_2_out_10
+      38   0.011    -4.85191    0.01526                                S-C3-TUNEPHOS_1_out_32
+      39   0.014    -4.85190    0.01516                                S-C3-TUNEPHOS_1_out_16
+      40   0.008    -4.85191    0.01533    0.16879       6      11     S-C3-TUNEPHOS_1_out_21
+      41   0.001    -4.85192    0.01552                                S-C3-TUNEPHOS_2_out_34
+      42   0.005    -4.85192    0.01541                                S-C3-TUNEPHOS_1_out_2
+      43   0.016    -4.85190    0.01511                                S-C3-TUNEPHOS_2_out_17
+      44   0.008    -4.85191    0.01531                                S-C3-TUNEPHOS_2_out_9
+      45   0.009    -4.85191    0.01531                                S-C3-TUNEPHOS_2_out_2
+      46   0.001    -4.85192    0.01552                                S-C3-TUNEPHOS_1_out_8
+      47   0.009    -4.85191    0.01531                                S-C3-TUNEPHOS_2_out_0
+      48   0.017    -4.85190    0.01510                                S-C3-TUNEPHOS_2_out_36
+      49   0.008    -4.85191    0.01533                                S-C3-TUNEPHOS_1_out_22
+      50   0.001    -4.85192    0.01552                                S-C3-TUNEPHOS_1_out_7
+      51   0.009    -4.85191    0.01531    0.03062       7       2     S-C3-TUNEPHOS_2_out_1
+      52   0.009    -4.85191    0.01531                                S-C3-TUNEPHOS_1_out_9
+      53   0.017    -4.85190    0.01509    0.06123       8       4     S-C3-TUNEPHOS_1_out_12
+      54   0.001    -4.85192    0.01552                                S-C3-TUNEPHOS_1_out_33
+      55   0.009    -4.85191    0.01531                                S-C3-TUNEPHOS_1_out_18
+      56   0.009    -4.85191    0.01531                                S-C3-TUNEPHOS_2_out_39
+      57   0.001    -4.85192    0.01552    0.03092       9       2     S-C3-TUNEPHOS_1_out_25
+      58   0.005    -4.85192    0.01540                                S-C3-TUNEPHOS_2_out_37
+      59   0.015    -4.85190    0.01516    0.01516      10       1     S-C3-TUNEPHOS_2_out_19
+      60   0.001    -4.85192    0.01552    0.03078      11       2     S-C3-TUNEPHOS_2_out_23
+      61   0.011    -4.85191    0.01526                                S-C3-TUNEPHOS_2_out_33
+      62   0.012    -4.85190    0.01523    0.03064      12       2     S-C3-TUNEPHOS_1_out_26
+      63   0.005    -4.85192    0.01541                                S-C3-TUNEPHOS_2_out_15
+      64   0.005    -4.85192    0.01541    0.03051      13       2     S-C3-TUNEPHOS_2_out_28
+      65   0.017    -4.85190    0.01510                                S-C3-TUNEPHOS_1_out_38
+T /K                                  :   298.15
+E lowest                              :    -4.85192
+ensemble average energy (kcal)        :    0.006
+ensemble entropy (J/mol K, cal/mol K) :   34.708    8.295
+ensemble free energy (kcal/mol)       :   -2.473
+population of lowest in %             :   24.778
+ number of unique conformers for further calc           13
+ list of relative energies saved as "crest.energies"
+
+ -----------------
+ Wall Time Summary
+ -----------------
+              CREGEN wall time :         0h : 0m : 0s
+--------------------
+Overall wall time  : 0h : 0m : 0s
+
+ CREST terminated normally.
