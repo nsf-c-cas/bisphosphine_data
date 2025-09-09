@@ -1,3 +1,4 @@
+DOI: 10.5281/zenodo.17086568
 
 # Bisphosphine Conformational Dependance Overview
 
